@@ -1,0 +1,1799 @@
+{
+    "data": {
+        "jobs": {
+            "nodes": [
+                {
+                    "id": "Z2lkOi8vSm9iYmVyL0pvYi8xMDY1MzIxODk=",
+                    "jobNumber": 230,
+                    "title": "Ramp Rental- 19' of ramp",
+                    "lineItems": {
+                        "nodes": [
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE0OTU1NjI5Ng==",
+                                "name": "Ramp rental fee per month",
+                                "description": "",
+                                "quantity": 1.0,
+                                "unitCost": 0.0,
+                                "totalPrice": 292.0,
+                                "totalCost": 0.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-03T21:31:18Z",
+                                "updatedAt": "2025-02-03T21:31:18Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjc0NTU3ODc=",
+                                    "name": "Ramp rental fee per month",
+                                    "description": "",
+                                    "category": "SERVICE",
+                                    "defaultUnitCost": 390.0,
+                                    "internalUnitCost": 0.0,
+                                    "markup": 0.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "Z2lkOi8vSm9iYmVyL0pvYi85MjUzNzk4Mw==",
+                    "jobNumber": 14,
+                    "title": "Monthly ramp rental ",
+                    "lineItems": {
+                        "nodes": [
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzEyODM1ODU5MQ==",
+                                "name": "Ramp Rental",
+                                "description": "",
+                                "quantity": 1.0,
+                                "unitCost": 300.0,
+                                "totalPrice": 300.0,
+                                "totalCost": 300.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2024-06-24T16:11:53Z",
+                                "updatedAt": "2024-07-02T15:05:48Z",
+                                "linkedProductOrService": null
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "Z2lkOi8vSm9iYmVyL0pvYi8xMDc0NjQzMDA=",
+                    "jobNumber": 236,
+                    "title": "Grab bars- 2 drywall, 2 acrylic",
+                    "lineItems": {
+                        "nodes": [
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MDk2NDYzNQ==",
+                                "name": "Grab bar installation 1",
+                                "description": "Installation of grab bars in tile/Acrylic- ",
+                                "quantity": 2.0,
+                                "unitCost": 0.0,
+                                "totalPrice": 350.0,
+                                "totalCost": 0.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-18T23:39:04Z",
+                                "updatedAt": "2025-02-18T23:39:04Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjgxOTk0NTg=",
+                                    "name": "Grab bar installation 1",
+                                    "description": "Installation of grab bar ",
+                                    "category": "SERVICE",
+                                    "defaultUnitCost": 0.0,
+                                    "internalUnitCost": 0.0,
+                                    "markup": 0.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MDk2NDYzNg==",
+                                "name": "Grab bar installation 2",
+                                "description": "Installation of grab bars in drywall Supplied by owner",
+                                "quantity": 2.0,
+                                "unitCost": 0.0,
+                                "totalPrice": 150.0,
+                                "totalCost": 0.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-18T23:39:04Z",
+                                "updatedAt": "2025-02-18T23:39:04Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjgxOTk0Njk=",
+                                    "name": "Grab bar installation 2",
+                                    "description": "Installation of grab bar",
+                                    "category": "SERVICE",
+                                    "defaultUnitCost": 0.0,
+                                    "internalUnitCost": 0.0,
+                                    "markup": 0.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "Z2lkOi8vSm9iYmVyL0pvYi8xMDgxMjE4NzM=",
+                    "jobNumber": 249,
+                    "title": "Ramp rental",
+                    "lineItems": {
+                        "nodes": [
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MTk2NzI2Nw==",
+                                "name": "Ramp rental",
+                                "description": "",
+                                "quantity": 1.0,
+                                "unitCost": 292.0,
+                                "totalPrice": 0.0,
+                                "totalCost": 292.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-28T19:25:36Z",
+                                "updatedAt": "2025-02-28T19:25:36Z",
+                                "linkedProductOrService": null
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "Z2lkOi8vSm9iYmVyL0pvYi8xMDgwNDgzMjY=",
+                    "jobNumber": 246,
+                    "title": "move stairlift",
+                    "lineItems": {
+                        "nodes": []
+                    }
+                },
+                {
+                    "id": "Z2lkOi8vSm9iYmVyL0pvYi8xMDgxMjEyNzg=",
+                    "jobNumber": 248,
+                    "title": "Ramp rental",
+                    "lineItems": {
+                        "nodes": [
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MTk2NjI5NA==",
+                                "name": "Ramp rental fee per month",
+                                "description": "",
+                                "quantity": 1.0,
+                                "unitCost": 0.0,
+                                "totalPrice": 252.0,
+                                "totalCost": 0.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-28T19:19:38Z",
+                                "updatedAt": "2025-02-28T19:19:38Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjc0NTU3ODc=",
+                                    "name": "Ramp rental fee per month",
+                                    "description": "",
+                                    "category": "SERVICE",
+                                    "defaultUnitCost": 390.0,
+                                    "internalUnitCost": 0.0,
+                                    "markup": 0.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "Z2lkOi8vSm9iYmVyL0pvYi8xMDgwMTg1MzM=",
+                    "jobNumber": 244,
+                    "title": "Ramp/Self-pay",
+                    "lineItems": {
+                        "nodes": [
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MTgwNjEzMg==",
+                                "name": "Ramp Rental installation, removal and first month rent",
+                                "description": "Ramp rental is on a month-to-month basis after the minimum rental period is complete. \u00a0Customer will allow Next Day Access to charge the monthly payment to a credit card or Debit/ ACH on file. \u00a0The \u00a0Payment is due each month starting on the date of installation.\u00a0 If payment is not successful, customer is fully responsible for producing an alternative payment option. \u00a0If payment is not complete within a 7 day period from the due date, the ramp will be removed from the customer\u2019s property.  By signing below, I agree to the terms of this agreement, and I allow Next Day Access access to my property for installation and removal of the ramp according to the terms listed above. \r\nNo Proration: There shall be no proration of rental payments for partial months.\r\nNotice Requirement: The Client must provide written notice to terminate the rental agreement at least 7 days prior to the next due date. Payment will be $252 every month following the first month until ramp is no longer needed.",
+                                "quantity": 1.0,
+                                "unitCost": 0.0,
+                                "totalPrice": 504.0,
+                                "totalCost": 0.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-27T16:14:06Z",
+                                "updatedAt": "2025-02-27T16:14:06Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjc0NTU3Nzg=",
+                                    "name": "Ramp Rental installation, removal and first month rent",
+                                    "description": "Ramp rental is on a month-to-month basis after the minimum rental period is complete. \u00a0Customer will allow Next Day Access to charge the monthly payment to a credit card or Debit/ ACH on file. \u00a0The \u00a0Payment is due each month starting on the date of installation.\u00a0 If payment is not successful, customer is fully responsible for producing an alternative payment option. \u00a0If payment is not complete within a 7 day period from the due date, the ramp will be removed from the customer\u2019s property.  By signing below, I agree to the terms of this agreement, and I allow Next Day Access access to my property for installation and removal of the ramp according to the terms listed above. \nNo Proration: There shall be no proration of rental payments for partial months.\nNotice Requirement: The Client must provide written notice to terminate the rental agreement at least 7 days prior to the next due date.",
+                                    "category": "SERVICE",
+                                    "defaultUnitCost": 936.0,
+                                    "internalUnitCost": 0.0,
+                                    "markup": 0.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "Z2lkOi8vSm9iYmVyL0pvYi8xMDgxMTc4Mjk=",
+                    "jobNumber": 247,
+                    "title": "Ramp Installation- Secondary locations",
+                    "lineItems": {
+                        "nodes": [
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MTk2MDk2NQ==",
+                                "name": "PS636WR",
+                                "description": "Patriot Series 6' long x 36\" wide with handrails PS636WR",
+                                "quantity": 2.0,
+                                "unitCost": 381.85,
+                                "totalPrice": 1947.44,
+                                "totalCost": 763.7,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-28T18:46:44Z",
+                                "updatedAt": "2025-02-28T18:46:44Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjYwMzQ1OTg=",
+                                    "name": "PS636WR",
+                                    "description": "Patriot Series 6' long x 36\" wide with handrails PS636WR",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 973.72,
+                                    "internalUnitCost": 381.85,
+                                    "markup": 155.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MTk2MDk2Ng==",
+                                "name": "PS536WR",
+                                "description": "Patriot Series 5' long x 36\" wide with handrails PS536WR",
+                                "quantity": 1.0,
+                                "unitCost": 346.92,
+                                "totalPrice": 884.65,
+                                "totalCost": 346.92,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-28T18:46:44Z",
+                                "updatedAt": "2025-02-28T18:46:44Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjYwMzQ1OTc=",
+                                    "name": "PS536WR",
+                                    "description": "Patriot Series 5' long x 36\" wide with handrails PS536WR",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 884.65,
+                                    "internalUnitCost": 346.92,
+                                    "markup": 155.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MTk2MDk2Nw==",
+                                "name": "PS336WR",
+                                "description": "Patriot Series 3' long x 36\" wide with handrails PS336WR",
+                                "quantity": 1.0,
+                                "unitCost": 243.55,
+                                "totalPrice": 596.7,
+                                "totalCost": 243.55,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-28T18:46:44Z",
+                                "updatedAt": "2025-02-28T18:46:44Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjYwMzQ1OTU=",
+                                    "name": "PS336WR",
+                                    "description": "Patriot Series 3' long x 36\" wide with handrails PS336WR",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 596.7,
+                                    "internalUnitCost": 243.55,
+                                    "markup": 145.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MTk2MDk2OA==",
+                                "name": "PS136WR",
+                                "description": "Patriot Series 1' long x 36\" Starter Kit, 2 Loops, TP, TT36 PS136WR",
+                                "quantity": 2.0,
+                                "unitCost": 88.27,
+                                "totalPrice": 432.52,
+                                "totalCost": 176.54,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-28T18:46:44Z",
+                                "updatedAt": "2025-02-28T18:46:44Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjYwMzQ1OTM=",
+                                    "name": "PS136WR",
+                                    "description": "Patriot Series 1' long x 36\" Starter Kit, 2 Loops, TP, TT36 PS136WR",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 216.26,
+                                    "internalUnitCost": 88.27,
+                                    "markup": 145.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MTk2MDk2OQ==",
+                                "name": "PS45T",
+                                "description": "Patriot Series 4 x 5 Turn with rails and support",
+                                "quantity": 1.0,
+                                "unitCost": 508.64,
+                                "totalPrice": 1246.17,
+                                "totalCost": 508.64,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-28T18:46:44Z",
+                                "updatedAt": "2025-02-28T18:46:44Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjYwMzQ2MjI=",
+                                    "name": "PS45T",
+                                    "description": "Patriot Series 4 x 5 Turn with rails and support",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 1246.17,
+                                    "internalUnitCost": 508.64,
+                                    "markup": 145.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MTk2MDk3MA==",
+                                "name": "BL342WR",
+                                "description": "Big Lug 3' x 42\" wide with 2 line handrail and support",
+                                "quantity": 1.0,
+                                "unitCost": 224.6,
+                                "totalPrice": 598.93,
+                                "totalCost": 224.6,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-28T18:46:44Z",
+                                "updatedAt": "2025-02-28T18:46:44Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjYwMzQ3ODU=",
+                                    "name": "BL342WR",
+                                    "description": "Big Lug 3' x 42\" wide with 2 line handrail and support",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 598.93,
+                                    "internalUnitCost": 224.6,
+                                    "markup": 166.66518254674978,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MTk2MDk3MQ==",
+                                "name": "Ramp installation Large",
+                                "description": "",
+                                "quantity": 1.0,
+                                "unitCost": 0.0,
+                                "totalPrice": 495.0,
+                                "totalCost": 0.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-28T18:46:44Z",
+                                "updatedAt": "2025-02-28T18:46:44Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMzI1MDQyOTQ=",
+                                    "name": "Ramp installation Large",
+                                    "description": "",
+                                    "category": "SERVICE",
+                                    "defaultUnitCost": 495.0,
+                                    "internalUnitCost": 0.0,
+                                    "markup": 0.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "Z2lkOi8vSm9iYmVyL0pvYi8xMDU4NjEyMDM=",
+                    "jobNumber": 221,
+                    "title": "Grab Bar Installation",
+                    "lineItems": {
+                        "nodes": []
+                    }
+                },
+                {
+                    "id": "Z2lkOi8vSm9iYmVyL0pvYi8xMDc2MjE5MjQ=",
+                    "jobNumber": 239,
+                    "title": "Ramp rental",
+                    "lineItems": {
+                        "nodes": [
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MTIwNTc2OA==",
+                                "name": "Ramp rental fee per month",
+                                "description": "",
+                                "quantity": 1.0,
+                                "unitCost": 0.0,
+                                "totalPrice": 204.0,
+                                "totalCost": 0.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-21T00:35:28Z",
+                                "updatedAt": "2025-02-21T00:35:28Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjc0NTU3ODc=",
+                                    "name": "Ramp rental fee per month",
+                                    "description": "",
+                                    "category": "SERVICE",
+                                    "defaultUnitCost": 390.0,
+                                    "internalUnitCost": 0.0,
+                                    "markup": 0.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "Z2lkOi8vSm9iYmVyL0pvYi8xMDc4Mjk4Mjk=",
+                    "jobNumber": 242,
+                    "title": "Ramp Rental- 1-4x5, 7\u2019 ramp",
+                    "lineItems": {
+                        "nodes": [
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MTUxNDIzMw==",
+                                "name": "Ramp rental fee per month",
+                                "description": "",
+                                "quantity": 1.0,
+                                "unitCost": 0.0,
+                                "totalPrice": 164.0,
+                                "totalCost": 0.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-25T11:40:55Z",
+                                "updatedAt": "2025-02-25T11:40:55Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjc0NTU3ODc=",
+                                    "name": "Ramp rental fee per month",
+                                    "description": "",
+                                    "category": "SERVICE",
+                                    "defaultUnitCost": 390.0,
+                                    "internalUnitCost": 0.0,
+                                    "markup": 0.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MTUxNDIzNA==",
+                                "name": "Ramp Installation",
+                                "description": "",
+                                "quantity": 1.0,
+                                "unitCost": 0.0,
+                                "totalPrice": 395.0,
+                                "totalCost": 0.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-25T11:40:55Z",
+                                "updatedAt": "2025-02-25T11:40:55Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjY2MjQyMDE=",
+                                    "name": "Ramp Installation",
+                                    "description": "",
+                                    "category": "SERVICE",
+                                    "defaultUnitCost": 395.0,
+                                    "internalUnitCost": 0.0,
+                                    "markup": 0.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "Z2lkOi8vSm9iYmVyL0pvYi8xMDc5Njg3NTY=",
+                    "jobNumber": 243,
+                    "title": "Ramp Installation",
+                    "lineItems": {
+                        "nodes": [
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MTcyNzQzNg==",
+                                "name": "PS636WR",
+                                "description": "Patriot Series 6' long x 36\" wide with handrails PS636WR",
+                                "quantity": 4.0,
+                                "unitCost": 381.85,
+                                "totalPrice": 3894.88,
+                                "totalCost": 1527.4,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-26T20:30:40Z",
+                                "updatedAt": "2025-02-26T20:30:40Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjYwMzQ1OTg=",
+                                    "name": "PS636WR",
+                                    "description": "Patriot Series 6' long x 36\" wide with handrails PS636WR",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 973.72,
+                                    "internalUnitCost": 381.85,
+                                    "markup": 155.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MTcyNzQzOA==",
+                                "name": "PS136WR",
+                                "description": "Patriot Series 1' long x 36\" Starter Kit, 2 Loops, TP, TT36 PS136WR",
+                                "quantity": 1.0,
+                                "unitCost": 88.27,
+                                "totalPrice": 216.26,
+                                "totalCost": 88.27,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-26T20:30:40Z",
+                                "updatedAt": "2025-02-26T20:30:40Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjYwMzQ1OTM=",
+                                    "name": "PS136WR",
+                                    "description": "Patriot Series 1' long x 36\" Starter Kit, 2 Loops, TP, TT36 PS136WR",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 216.26,
+                                    "internalUnitCost": 88.27,
+                                    "markup": 145.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MTcyNzQ0MA==",
+                                "name": "Ramp Installation",
+                                "description": "",
+                                "quantity": 1.0,
+                                "unitCost": 0.0,
+                                "totalPrice": 395.0,
+                                "totalCost": 0.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-26T20:30:40Z",
+                                "updatedAt": "2025-02-26T20:30:40Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjY2MjQyMDE=",
+                                    "name": "Ramp Installation",
+                                    "description": "",
+                                    "category": "SERVICE",
+                                    "defaultUnitCost": 395.0,
+                                    "internalUnitCost": 0.0,
+                                    "markup": 0.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "Z2lkOi8vSm9iYmVyL0pvYi8xMDgwMTk0OTU=",
+                    "jobNumber": 245,
+                    "title": "Ramp Relocation",
+                    "lineItems": {
+                        "nodes": [
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MTgwNzU5MA==",
+                                "name": "PS55U",
+                                "description": "Patriot  Series 5 x 5 universal with rails and support",
+                                "quantity": 1.0,
+                                "unitCost": 579.92,
+                                "totalPrice": 1478.8,
+                                "totalCost": 579.92,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-27T16:22:35Z",
+                                "updatedAt": "2025-02-27T16:22:35Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjYwMzQ2MjY=",
+                                    "name": "PS55U",
+                                    "description": "Patriot  Series 5 x 5 universal with rails and support",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 1478.8,
+                                    "internalUnitCost": 579.92,
+                                    "markup": 155.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MTgwNzU5MQ==",
+                                "name": "Ramp Relocation/Installation",
+                                "description": "",
+                                "quantity": 1.0,
+                                "unitCost": 0.0,
+                                "totalPrice": 350.0,
+                                "totalCost": 0.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-27T16:22:35Z",
+                                "updatedAt": "2025-02-27T16:22:35Z",
+                                "linkedProductOrService": null
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "Z2lkOi8vSm9iYmVyL0pvYi8xMDY3ODEyMzg=",
+                    "jobNumber": 232,
+                    "title": "Ramp Installation",
+                    "lineItems": {
+                        "nodes": [
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE0OTk0NTQwMA==",
+                                "name": "PS45T",
+                                "description": "Patriot Series 4 x 5 Turn with rails and support",
+                                "quantity": 2.0,
+                                "unitCost": 508.64,
+                                "totalPrice": 2492.34,
+                                "totalCost": 1017.28,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-07T12:26:37Z",
+                                "updatedAt": "2025-02-07T12:26:37Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjYwMzQ2MjI=",
+                                    "name": "PS45T",
+                                    "description": "Patriot Series 4 x 5 Turn with rails and support",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 1246.17,
+                                    "internalUnitCost": 508.64,
+                                    "markup": 145.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE0OTk0NTQwMQ==",
+                                "name": "PS136WR",
+                                "description": "Patriot Series 1' long x 36\" Starter Kit, 2 Loops, TP, TT36 PS136WR",
+                                "quantity": 1.0,
+                                "unitCost": 88.27,
+                                "totalPrice": 216.26,
+                                "totalCost": 88.27,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-07T12:26:37Z",
+                                "updatedAt": "2025-02-07T12:26:37Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjYwMzQ1OTM=",
+                                    "name": "PS136WR",
+                                    "description": "Patriot Series 1' long x 36\" Starter Kit, 2 Loops, TP, TT36 PS136WR",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 216.26,
+                                    "internalUnitCost": 88.27,
+                                    "markup": 145.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE0OTk0NTQwMg==",
+                                "name": "PS636WR",
+                                "description": "Patriot Series 6' long x 36\" wide with handrails PS636WR",
+                                "quantity": 5.0,
+                                "unitCost": 381.85,
+                                "totalPrice": 4868.6,
+                                "totalCost": 1909.25,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-07T12:26:37Z",
+                                "updatedAt": "2025-02-07T12:26:37Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjYwMzQ1OTg=",
+                                    "name": "PS636WR",
+                                    "description": "Patriot Series 6' long x 36\" wide with handrails PS636WR",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 973.72,
+                                    "internalUnitCost": 381.85,
+                                    "markup": 155.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE0OTk0NTQwMw==",
+                                "name": "PS436WR",
+                                "description": "Patriot Series 4' long x 36\" wide with handrails PS436WR",
+                                "quantity": 1.0,
+                                "unitCost": 303.5,
+                                "totalPrice": 743.58,
+                                "totalCost": 303.5,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-07T12:26:37Z",
+                                "updatedAt": "2025-02-07T12:26:37Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjYwMzQ1OTY=",
+                                    "name": "PS436WR",
+                                    "description": "Patriot Series 4' long x 36\" wide with handrails PS436WR",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 743.58,
+                                    "internalUnitCost": 303.5,
+                                    "markup": 145.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE0OTk0NTQwNA==",
+                                "name": "Paver 12x12",
+                                "description": "Used for installations over yard or gardens.",
+                                "quantity": 8.0,
+                                "unitCost": 1.86,
+                                "totalPrice": 33.52,
+                                "totalCost": 14.88,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-07T12:26:37Z",
+                                "updatedAt": "2025-02-07T12:26:37Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjc0ODExMDE=",
+                                    "name": "Paver 12x12",
+                                    "description": "Used for installations over yard or gardens.",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 4.19,
+                                    "internalUnitCost": 1.86,
+                                    "markup": 125.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE0OTk0NTQwNQ==",
+                                "name": "Ramp Installation",
+                                "description": "",
+                                "quantity": 1.0,
+                                "unitCost": 0.0,
+                                "totalPrice": 425.0,
+                                "totalCost": 0.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-07T12:26:37Z",
+                                "updatedAt": "2025-02-07T12:26:37Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjY2MjQyMDE=",
+                                    "name": "Ramp Installation",
+                                    "description": "",
+                                    "category": "SERVICE",
+                                    "defaultUnitCost": 395.0,
+                                    "internalUnitCost": 0.0,
+                                    "markup": 0.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE0OTk0NTQwNg==",
+                                "name": "RAEZ0110",
+                                "description": "7/8\" x 8\" x 41.5\" Rubber Threshold Ramp",
+                                "quantity": 1.0,
+                                "unitCost": 39.99,
+                                "totalPrice": 89.98,
+                                "totalCost": 39.99,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-07T12:26:37Z",
+                                "updatedAt": "2025-02-07T12:26:37Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjYwMzQ3NzA=",
+                                    "name": "RAEZ0110",
+                                    "description": "7/8\" x 8\" x 41.5\" Rubber Threshold Ramp",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 89.98,
+                                    "internalUnitCost": 39.99,
+                                    "markup": 125.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "Z2lkOi8vSm9iYmVyL0pvYi8xMDc1OTc0MzQ=",
+                    "jobNumber": 238,
+                    "title": "Ramp Installation",
+                    "lineItems": {
+                        "nodes": [
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MTE2Njg5Nw==",
+                                "name": "PS536WR",
+                                "description": "Patriot Series 5' long x 36\" wide with handrails PS536WR",
+                                "quantity": 4.0,
+                                "unitCost": 346.92,
+                                "totalPrice": 3538.6,
+                                "totalCost": 1387.68,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-20T19:27:05Z",
+                                "updatedAt": "2025-02-20T19:27:05Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjYwMzQ1OTc=",
+                                    "name": "PS536WR",
+                                    "description": "Patriot Series 5' long x 36\" wide with handrails PS536WR",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 884.65,
+                                    "internalUnitCost": 346.92,
+                                    "markup": 155.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MTE2Njg5OA==",
+                                "name": "PS55U",
+                                "description": "Patriot  Series 5 x 5 universal with rails and support",
+                                "quantity": 1.0,
+                                "unitCost": 579.92,
+                                "totalPrice": 1478.8,
+                                "totalCost": 579.92,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-20T19:27:05Z",
+                                "updatedAt": "2025-02-20T19:27:05Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjYwMzQ2MjY=",
+                                    "name": "PS55U",
+                                    "description": "Patriot  Series 5 x 5 universal with rails and support",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 1478.8,
+                                    "internalUnitCost": 579.92,
+                                    "markup": 155.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MTE2Njg5OQ==",
+                                "name": "PS136WR",
+                                "description": "Patriot Series 1' long x 36\" Starter Kit, 2 Loops, TP, TT36 PS136WR",
+                                "quantity": 1.0,
+                                "unitCost": 88.27,
+                                "totalPrice": 216.26,
+                                "totalCost": 88.27,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-20T19:27:05Z",
+                                "updatedAt": "2025-02-20T19:27:05Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjYwMzQ1OTM=",
+                                    "name": "PS136WR",
+                                    "description": "Patriot Series 1' long x 36\" Starter Kit, 2 Loops, TP, TT36 PS136WR",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 216.26,
+                                    "internalUnitCost": 88.27,
+                                    "markup": 145.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MTE2NjkwMA==",
+                                "name": "Paver 12x12",
+                                "description": "Used for installations over yard or gardens.",
+                                "quantity": 12.0,
+                                "unitCost": 1.86,
+                                "totalPrice": 50.28,
+                                "totalCost": 22.32,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-20T19:27:05Z",
+                                "updatedAt": "2025-02-20T19:27:05Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjc0ODExMDE=",
+                                    "name": "Paver 12x12",
+                                    "description": "Used for installations over yard or gardens.",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 4.19,
+                                    "internalUnitCost": 1.86,
+                                    "markup": 125.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MTE2NjkwMQ==",
+                                "name": "Ramp Installation",
+                                "description": "",
+                                "quantity": 1.0,
+                                "unitCost": 0.0,
+                                "totalPrice": 395.0,
+                                "totalCost": 0.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-20T19:27:05Z",
+                                "updatedAt": "2025-02-20T19:27:05Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjY2MjQyMDE=",
+                                    "name": "Ramp Installation",
+                                    "description": "",
+                                    "category": "SERVICE",
+                                    "defaultUnitCost": 395.0,
+                                    "internalUnitCost": 0.0,
+                                    "markup": 0.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MTE2NjkwMg==",
+                                "name": "PS336WR",
+                                "description": "Patriot Series 3' long x 36\" wide with handrails PS336WR",
+                                "quantity": 1.0,
+                                "unitCost": 243.55,
+                                "totalPrice": 596.7,
+                                "totalCost": 243.55,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-20T19:27:05Z",
+                                "updatedAt": "2025-02-20T19:27:05Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjYwMzQ1OTU=",
+                                    "name": "PS336WR",
+                                    "description": "Patriot Series 3' long x 36\" wide with handrails PS336WR",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 596.7,
+                                    "internalUnitCost": 243.55,
+                                    "markup": 145.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MTE2NjkwMw==",
+                                "name": "Threshold rubber ramp 3.5\"",
+                                "description": "",
+                                "quantity": 1.0,
+                                "unitCost": 240.0,
+                                "totalPrice": 480.0,
+                                "totalCost": 240.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-20T19:27:05Z",
+                                "updatedAt": "2025-02-20T19:27:05Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMzExNTU0ODQ=",
+                                    "name": "Threshold rubber ramp 3.5\"",
+                                    "description": "",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 480.0,
+                                    "internalUnitCost": 240.0,
+                                    "markup": 100.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "Z2lkOi8vSm9iYmVyL0pvYi8xMDY0MzExMjg=",
+                    "jobNumber": 228,
+                    "title": "VPL in front yard",
+                    "lineItems": {
+                        "nodes": [
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE0OTQxMjUxOA==",
+                                "name": "Harmar VPL",
+                                "description": "Harmar Highlander II VPL 400. Price includes new concrete pad and installation. From the lift to the driveway will be rubber mats. VPL requires electrical which is currently not present.",
+                                "quantity": 1.0,
+                                "unitCost": 9995.0,
+                                "totalPrice": 9987.0,
+                                "totalCost": 9995.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-01T14:56:08Z",
+                                "updatedAt": "2025-02-01T14:56:08Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjg5NTgzMDM=",
+                                    "name": "Harmar VPL",
+                                    "description": "Harmar Highlander II VPL with lift height up to 149\u201d Options to be added separately",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 20989.5,
+                                    "internalUnitCost": 9995.0,
+                                    "markup": 110.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "Z2lkOi8vSm9iYmVyL0pvYi8xMDY5ODI2Mjg=",
+                    "jobNumber": 235,
+                    "title": "Stairlift installation ",
+                    "lineItems": {
+                        "nodes": [
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MDIzNTUyOA==",
+                                "name": "Bruno-Elan SRE 3050",
+                                "description": "SRE-3050 - Elan Straight Rail Stairlift",
+                                "quantity": 1.0,
+                                "unitCost": 0.0,
+                                "totalPrice": 4280.0,
+                                "totalCost": 0.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-11T01:47:09Z",
+                                "updatedAt": "2025-02-11T01:47:09Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjYwMzQ4OTI=",
+                                    "name": "Bruno-Elan SRE 3050",
+                                    "description": "SRE-3050 - Elan Straight Rail Stairlift",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 4280.0,
+                                    "internalUnitCost": 0.0,
+                                    "markup": 0.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MDIzNTUyOQ==",
+                                "name": "Stairlift installation",
+                                "description": "Installation of stairlift ",
+                                "quantity": 1.0,
+                                "unitCost": 0.0,
+                                "totalPrice": 250.0,
+                                "totalCost": 0.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-11T01:47:09Z",
+                                "updatedAt": "2025-02-11T01:47:09Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjg2MzIyMTU=",
+                                    "name": "Stairlift installation",
+                                    "description": "Installation of stairlift ",
+                                    "category": "SERVICE",
+                                    "defaultUnitCost": 250.0,
+                                    "internalUnitCost": 0.0,
+                                    "markup": 0.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "Z2lkOi8vSm9iYmVyL0pvYi8xMDc3MjYxMjA=",
+                    "jobNumber": 241,
+                    "title": "Ramp Rental",
+                    "lineItems": {
+                        "nodes": [
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MTM2MjU4OA==",
+                                "name": "Ramp rental fee per month",
+                                "description": "",
+                                "quantity": 1.0,
+                                "unitCost": 0.0,
+                                "totalPrice": 92.0,
+                                "totalCost": 0.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-23T23:15:50Z",
+                                "updatedAt": "2025-02-23T23:15:50Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjc0NTU3ODc=",
+                                    "name": "Ramp rental fee per month",
+                                    "description": "",
+                                    "category": "SERVICE",
+                                    "defaultUnitCost": 390.0,
+                                    "internalUnitCost": 0.0,
+                                    "markup": 0.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "Z2lkOi8vSm9iYmVyL0pvYi8xMDc2OTc4Nzg=",
+                    "jobNumber": 240,
+                    "title": "Ramp Rental",
+                    "lineItems": {
+                        "nodes": [
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MTMyNTcwOQ==",
+                                "name": "Ramp Rental",
+                                "description": "Ramp rental is on a month-to-month basis after the minimum rental period is complete. \u00a0Customer will allow Next Day Access to charge the monthly payment to a credit card or Debit/ ACH on file. \u00a0The \u00a0Payment is due each month starting on the date of installation.\u00a0 If payment is not successful, customer is fully responsible for producing an alternative payment option. \u00a0If payment is not complete within a 7 day period from the due date, the ramp will be removed from the customer\u2019s property.  By signing below, I agree to the terms of this agreement, and I allow Next Day Access access to my property for installation and removal of the ramp according to the terms listed above. \r\nNo Proration: There shall be no proration of rental payments for partial months.\r\nNotice Requirement: The Client must provide written notice to terminate the rental agreement at least 7 days prior to the next due date.",
+                                "quantity": 1.0,
+                                "unitCost": 0.0,
+                                "totalPrice": 92.0,
+                                "totalCost": 0.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-22T16:52:58Z",
+                                "updatedAt": "2025-02-22T16:52:58Z",
+                                "linkedProductOrService": null
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MTMyNTcxMA==",
+                                "name": "Ramp Installation",
+                                "description": "",
+                                "quantity": 1.0,
+                                "unitCost": 0.0,
+                                "totalPrice": 125.0,
+                                "totalCost": 0.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-22T16:52:58Z",
+                                "updatedAt": "2025-02-22T16:52:58Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjY2MjQyMDE=",
+                                    "name": "Ramp Installation",
+                                    "description": "",
+                                    "category": "SERVICE",
+                                    "defaultUnitCost": 395.0,
+                                    "internalUnitCost": 0.0,
+                                    "markup": 0.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "Z2lkOi8vSm9iYmVyL0pvYi8xMDUxMTI1MjM=",
+                    "jobNumber": 205,
+                    "title": "Ramp Installation",
+                    "lineItems": {
+                        "nodes": [
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE0NzU0OTk5MQ==",
+                                "name": "PS136WR",
+                                "description": "Patriot Series 1' long x 36\" Starter Kit, 2 Loops, TP, TT36 PS136WR",
+                                "quantity": 1.0,
+                                "unitCost": 88.27,
+                                "totalPrice": 216.26,
+                                "totalCost": 88.27,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-01-14T13:17:31Z",
+                                "updatedAt": "2025-01-14T13:17:31Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjYwMzQ1OTM=",
+                                    "name": "PS136WR",
+                                    "description": "Patriot Series 1' long x 36\" Starter Kit, 2 Loops, TP, TT36 PS136WR",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 216.26,
+                                    "internalUnitCost": 88.27,
+                                    "markup": 145.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE0NzU0OTk5Mg==",
+                                "name": "BL442WR",
+                                "description": "Big Lug 4' x 42\" wide with 2 line handrail and support",
+                                "quantity": 1.0,
+                                "unitCost": 284.14,
+                                "totalPrice": 757.71,
+                                "totalCost": 284.14,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-01-14T13:17:31Z",
+                                "updatedAt": "2025-01-14T13:17:31Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjYwMzQ3ODY=",
+                                    "name": "BL442WR",
+                                    "description": "Big Lug 4' x 42\" wide with 2 line handrail and support",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 757.71,
+                                    "internalUnitCost": 284.14,
+                                    "markup": 166.66783979728302,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE0NzU0OTk5Mw==",
+                                "name": "PS536WR",
+                                "description": "Patriot Series 5' long x 36\" wide with handrails PS536WR",
+                                "quantity": 1.0,
+                                "unitCost": 346.92,
+                                "totalPrice": 884.65,
+                                "totalCost": 346.92,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-01-14T13:17:31Z",
+                                "updatedAt": "2025-01-14T13:17:31Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjYwMzQ1OTc=",
+                                    "name": "PS536WR",
+                                    "description": "Patriot Series 5' long x 36\" wide with handrails PS536WR",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 884.65,
+                                    "internalUnitCost": 346.92,
+                                    "markup": 155.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE0NzU0OTk5NA==",
+                                "name": "PS336WR",
+                                "description": "Patriot Series 3' long x 36\" wide with handrails PS336WR",
+                                "quantity": 1.0,
+                                "unitCost": 243.55,
+                                "totalPrice": 596.7,
+                                "totalCost": 243.55,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-01-14T13:17:31Z",
+                                "updatedAt": "2025-01-14T13:17:31Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjYwMzQ1OTU=",
+                                    "name": "PS336WR",
+                                    "description": "Patriot Series 3' long x 36\" wide with handrails PS336WR",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 596.7,
+                                    "internalUnitCost": 243.55,
+                                    "markup": 145.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE0NzU0OTk5NQ==",
+                                "name": "Ramp Installation",
+                                "description": "",
+                                "quantity": 1.0,
+                                "unitCost": 0.0,
+                                "totalPrice": 275.0,
+                                "totalCost": 0.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-01-14T13:17:31Z",
+                                "updatedAt": "2025-01-14T13:17:31Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjY2MjQyMDE=",
+                                    "name": "Ramp Installation",
+                                    "description": "",
+                                    "category": "SERVICE",
+                                    "defaultUnitCost": 395.0,
+                                    "internalUnitCost": 0.0,
+                                    "markup": 0.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "Z2lkOi8vSm9iYmVyL0pvYi8xMDc0OTI1NTQ=",
+                    "jobNumber": 237,
+                    "title": "Ramp Rental",
+                    "lineItems": {
+                        "nodes": [
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MTAwNzE3Mg==",
+                                "name": "Ramp rental fee",
+                                "description": "",
+                                "quantity": 1.0,
+                                "unitCost": 0.0,
+                                "totalPrice": 600.0,
+                                "totalCost": 0.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-19T15:50:58Z",
+                                "updatedAt": "2025-02-19T15:50:58Z",
+                                "linkedProductOrService": null
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MTEzMzQ4Mg==",
+                                "name": "Ramp rental fee per month",
+                                "description": "24' of Ramp and rails -3-6',1-5',1-1' transition plate",
+                                "quantity": 1.0,
+                                "unitCost": null,
+                                "totalPrice": 0.0,
+                                "totalCost": null,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-20T16:10:39Z",
+                                "updatedAt": "2025-02-20T16:10:39Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjc0NTU3ODc=",
+                                    "name": "Ramp rental fee per month",
+                                    "description": "",
+                                    "category": "SERVICE",
+                                    "defaultUnitCost": 390.0,
+                                    "internalUnitCost": 0.0,
+                                    "markup": 0.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "Z2lkOi8vSm9iYmVyL0pvYi8xMDU3NDI5NTI=",
+                    "jobNumber": 219,
+                    "title": "Ramp Rental",
+                    "lineItems": {
+                        "nodes": [
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE0ODQwOTU5MA==",
+                                "name": "Ramp rental fee per month",
+                                "description": "",
+                                "quantity": 1.0,
+                                "unitCost": 0.0,
+                                "totalPrice": 480.0,
+                                "totalCost": 0.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-01-22T14:44:16Z",
+                                "updatedAt": "2025-01-22T14:44:16Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjc0NTU3ODc=",
+                                    "name": "Ramp rental fee per month",
+                                    "description": "",
+                                    "category": "SERVICE",
+                                    "defaultUnitCost": 390.0,
+                                    "internalUnitCost": 0.0,
+                                    "markup": 0.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "Z2lkOi8vSm9iYmVyL0pvYi85NjcwMTQ1OA==",
+                    "jobNumber": 69,
+                    "title": "Monthly ramp rental",
+                    "lineItems": {
+                        "nodes": [
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzEzNDc1OTkzOQ==",
+                                "name": "Monthly ramp rental",
+                                "description": "",
+                                "quantity": 1.0,
+                                "unitCost": 499.0,
+                                "totalPrice": 499.0,
+                                "totalCost": 499.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2024-08-28T15:26:49Z",
+                                "updatedAt": "2024-08-28T15:26:49Z",
+                                "linkedProductOrService": null
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "Z2lkOi8vSm9iYmVyL0pvYi85NjAyNDIyNg==",
+                    "jobNumber": 62,
+                    "title": "Ms. Schmidt ramp rental",
+                    "lineItems": {
+                        "nodes": [
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzEzMzcxODk4OA==",
+                                "name": "Monthly Ramp rental",
+                                "description": "",
+                                "quantity": 1.0,
+                                "unitCost": 292.0,
+                                "totalPrice": 292.0,
+                                "totalCost": 292.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2024-08-17T19:28:47Z",
+                                "updatedAt": "2024-08-17T19:28:47Z",
+                                "linkedProductOrService": null
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "Z2lkOi8vSm9iYmVyL0pvYi85ODI3OTA1Mw==",
+                    "jobNumber": 101,
+                    "title": "Monthly ramp rental",
+                    "lineItems": {
+                        "nodes": [
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzEzNzIwOTUzOQ==",
+                                "name": "Monthly ramp rental",
+                                "description": "",
+                                "quantity": 1.0,
+                                "unitCost": 365.0,
+                                "totalPrice": 365.0,
+                                "totalCost": 365.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2024-09-23T11:21:21Z",
+                                "updatedAt": "2024-09-23T11:21:21Z",
+                                "linkedProductOrService": null
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "Z2lkOi8vSm9iYmVyL0pvYi8xMDY4MzkzNjU=",
+                    "jobNumber": 234,
+                    "title": "Grab Bar installation- 2 in tile shower",
+                    "lineItems": {
+                        "nodes": [
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MDAyODcwNg==",
+                                "name": "Grab bar installation 2",
+                                "description": "Installation of grab bars in tile",
+                                "quantity": 2.0,
+                                "unitCost": 0.0,
+                                "totalPrice": 390.0,
+                                "totalCost": 0.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-07T20:50:47Z",
+                                "updatedAt": "2025-02-07T20:50:47Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjgxOTk0Njk=",
+                                    "name": "Grab bar installation 2",
+                                    "description": "Installation of grab bar",
+                                    "category": "SERVICE",
+                                    "defaultUnitCost": 0.0,
+                                    "internalUnitCost": 0.0,
+                                    "markup": 0.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "Z2lkOi8vSm9iYmVyL0pvYi8xMDYwODczNzY=",
+                    "jobNumber": 223,
+                    "title": "Ramp Installationps636",
+                    "lineItems": {
+                        "nodes": [
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE0ODg5NTEyMg==",
+                                "name": "PS636WR",
+                                "description": "Patriot Series 6' long x 36\" wide with handrails PS636WR",
+                                "quantity": 5.0,
+                                "unitCost": 381.85,
+                                "totalPrice": 4868.6,
+                                "totalCost": 1909.25,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-01-27T20:07:02Z",
+                                "updatedAt": "2025-01-27T20:07:02Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjYwMzQ1OTg=",
+                                    "name": "PS636WR",
+                                    "description": "Patriot Series 6' long x 36\" wide with handrails PS636WR",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 973.72,
+                                    "internalUnitCost": 381.85,
+                                    "markup": 155.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE0ODg5NTEyMw==",
+                                "name": "PS536WR",
+                                "description": "Patriot Series 5' long x 36\" wide with handrails PS536WR",
+                                "quantity": 1.0,
+                                "unitCost": 346.92,
+                                "totalPrice": 884.65,
+                                "totalCost": 346.92,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-01-27T20:07:02Z",
+                                "updatedAt": "2025-01-27T20:07:02Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjYwMzQ1OTc=",
+                                    "name": "PS536WR",
+                                    "description": "Patriot Series 5' long x 36\" wide with handrails PS536WR",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 884.65,
+                                    "internalUnitCost": 346.92,
+                                    "markup": 155.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE0ODg5NTEyNA==",
+                                "name": "PS136WR",
+                                "description": "Patriot Series 1' long x 36\" Starter Kit, 2 Loops, TP, TT36 PS136WR",
+                                "quantity": 1.0,
+                                "unitCost": 88.27,
+                                "totalPrice": 216.26,
+                                "totalCost": 88.27,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-01-27T20:07:02Z",
+                                "updatedAt": "2025-01-27T20:07:02Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjYwMzQ1OTM=",
+                                    "name": "PS136WR",
+                                    "description": "Patriot Series 1' long x 36\" Starter Kit, 2 Loops, TP, TT36 PS136WR",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 216.26,
+                                    "internalUnitCost": 88.27,
+                                    "markup": 145.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE0ODg5NTEyNQ==",
+                                "name": "PS55U",
+                                "description": "Patriot  Series 5 x 5 universal with rails and support",
+                                "quantity": 2.0,
+                                "unitCost": 579.92,
+                                "totalPrice": 2957.6,
+                                "totalCost": 1159.84,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-01-27T20:07:02Z",
+                                "updatedAt": "2025-01-27T20:07:02Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjYwMzQ2MjY=",
+                                    "name": "PS55U",
+                                    "description": "Patriot  Series 5 x 5 universal with rails and support",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 1478.8,
+                                    "internalUnitCost": 579.92,
+                                    "markup": 155.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE0ODg5NTEyNg==",
+                                "name": "RGP",
+                                "description": "Rubber Ground Pad 4' x 6' x 3/4\"",
+                                "quantity": 1.0,
+                                "unitCost": 78.82,
+                                "totalPrice": 118.23,
+                                "totalCost": 78.82,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-01-27T20:07:02Z",
+                                "updatedAt": "2025-01-27T20:07:02Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjYwMzQ2NTA=",
+                                    "name": "RGP",
+                                    "description": "Rubber Ground Pad 4' x 6' x 3/4\"",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 118.23,
+                                    "internalUnitCost": 78.82,
+                                    "markup": 50.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE0ODg5NTEyNw==",
+                                "name": "Paver 12x12",
+                                "description": "Used for installations over yard or gardens.",
+                                "quantity": 20.0,
+                                "unitCost": 1.86,
+                                "totalPrice": 83.8,
+                                "totalCost": 37.2,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-01-27T20:07:02Z",
+                                "updatedAt": "2025-01-27T20:07:02Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjc0ODExMDE=",
+                                    "name": "Paver 12x12",
+                                    "description": "Used for installations over yard or gardens.",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 4.19,
+                                    "internalUnitCost": 1.86,
+                                    "markup": 125.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE0ODg5NTEyOA==",
+                                "name": "Ramp Installation",
+                                "description": "",
+                                "quantity": 1.0,
+                                "unitCost": 0.0,
+                                "totalPrice": 495.0,
+                                "totalCost": 0.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-01-27T20:07:02Z",
+                                "updatedAt": "2025-01-27T20:07:02Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjY2MjQyMDE=",
+                                    "name": "Ramp Installation",
+                                    "description": "",
+                                    "category": "SERVICE",
+                                    "defaultUnitCost": 395.0,
+                                    "internalUnitCost": 0.0,
+                                    "markup": 0.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "Z2lkOi8vSm9iYmVyL0pvYi85MjU0MDI0Nw==",
+                    "jobNumber": 16,
+                    "title": "Monthly ramp rental",
+                    "lineItems": {
+                        "nodes": [
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzEyODM2MTc3Mg==",
+                                "name": "Monthly ramp rental",
+                                "description": "",
+                                "quantity": 1.0,
+                                "unitCost": 144.0,
+                                "totalPrice": 144.0,
+                                "totalCost": 144.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2024-06-24T16:25:55Z",
+                                "updatedAt": "2024-07-02T15:06:51Z",
+                                "linkedProductOrService": null
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "Z2lkOi8vSm9iYmVyL0pvYi85Mzg5NDYwOQ==",
+                    "jobNumber": 29,
+                    "title": "Monthly ramp rental",
+                    "lineItems": {
+                        "nodes": [
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzEzMDQyMTM3Mg==",
+                                "name": "Ramp rental",
+                                "description": "",
+                                "quantity": 1.0,
+                                "unitCost": 256.0,
+                                "totalPrice": 256.0,
+                                "totalCost": 256.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2024-07-15T19:20:59Z",
+                                "updatedAt": "2024-07-15T19:20:59Z",
+                                "linkedProductOrService": null
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "Z2lkOi8vSm9iYmVyL0pvYi8xMDY4Mjg3ODM=",
+                    "jobNumber": 233,
+                    "title": "Ramp Installation",
+                    "lineItems": {
+                        "nodes": [
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MDAxMjgwNg==",
+                                "name": "PS536WR",
+                                "description": "Patriot Series 5' long x 36\" wide with handrails PS536WR",
+                                "quantity": 5.0,
+                                "unitCost": 346.92,
+                                "totalPrice": 4423.25,
+                                "totalCost": 1734.6,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-07T19:27:17Z",
+                                "updatedAt": "2025-02-07T19:27:17Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjYwMzQ1OTc=",
+                                    "name": "PS536WR",
+                                    "description": "Patriot Series 5' long x 36\" wide with handrails PS536WR",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 884.65,
+                                    "internalUnitCost": 346.92,
+                                    "markup": 155.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MDAxMjgwNw==",
+                                "name": "PS136WR",
+                                "description": "Patriot Series 1' long x 36\" Starter Kit, 2 Loops, TP, TT36 PS136WR",
+                                "quantity": 1.0,
+                                "unitCost": 88.27,
+                                "totalPrice": 216.26,
+                                "totalCost": 88.27,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-07T19:27:17Z",
+                                "updatedAt": "2025-02-07T19:27:17Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjYwMzQ1OTM=",
+                                    "name": "PS136WR",
+                                    "description": "Patriot Series 1' long x 36\" Starter Kit, 2 Loops, TP, TT36 PS136WR",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 216.26,
+                                    "internalUnitCost": 88.27,
+                                    "markup": 145.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MDAxMjgwOA==",
+                                "name": "RGP",
+                                "description": "Rubber Ground Pad 4' x 6' x 3/4\"",
+                                "quantity": 1.0,
+                                "unitCost": 78.82,
+                                "totalPrice": 118.23,
+                                "totalCost": 78.82,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-07T19:27:17Z",
+                                "updatedAt": "2025-02-07T19:27:17Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjYwMzQ2NTA=",
+                                    "name": "RGP",
+                                    "description": "Rubber Ground Pad 4' x 6' x 3/4\"",
+                                    "category": "PRODUCT",
+                                    "defaultUnitCost": 118.23,
+                                    "internalUnitCost": 78.82,
+                                    "markup": 50.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "id": "Z2lkOi8vSm9iYmVyL0pvYkxpbmVJdGVtLzE1MDAxMjgwOQ==",
+                                "name": "Ramp Installation",
+                                "description": "",
+                                "quantity": 1.0,
+                                "unitCost": 0.0,
+                                "totalPrice": 395.0,
+                                "totalCost": 0.0,
+                                "category": "SERVICE",
+                                "taxable": true,
+                                "createdAt": "2025-02-07T19:27:17Z",
+                                "updatedAt": "2025-02-07T19:27:17Z",
+                                "linkedProductOrService": {
+                                    "id": "Z2lkOi8vSm9iYmVyL1Byb2R1Y3RPclNlcnZpY2UvMjY2MjQyMDE=",
+                                    "name": "Ramp Installation",
+                                    "description": "",
+                                    "category": "SERVICE",
+                                    "defaultUnitCost": 395.0,
+                                    "internalUnitCost": 0.0,
+                                    "markup": 0.0,
+                                    "taxable": true,
+                                    "visible": true
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "extensions": {
+        "cost": {
+            "requestedQueryCost": 6452,
+            "actualQueryCost": 1469,
+            "throttleStatus": {
+                "maximumAvailable": 10000,
+                "currentlyAvailable": 8531,
+                "restoreRate": 500
+            }
+        },
+        "versioning": {
+            "version": "2023-08-18",
+            "warning": "API Version 2023-08-18 is no longer supported, and will be removed at any time without warning. Upgrade to the latest API version 2025-01-20 to ensure your app continues to function. For more information: https://developer.getjobber.com/docs/using_jobbers_api/api_versioning"
+        }
+    }
+}
