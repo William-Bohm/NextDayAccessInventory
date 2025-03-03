@@ -168,32 +168,53 @@ query FetchJobLineItems($after: String, $limit: Int!) {
 }
 """
 
-def fetch_quotes(access_token, limit=5):
-    """Fetch a limited number of quotes from the Jobber GraphQL API"""
-    graphql_url = "https://api.getjobber.com/api/graphql"
-    
-    # GraphQL query to fetch quotes with basic information
-    query = """
-    query FetchQuotes {
-      quotes(first: %d) {
+fetch_quotes_query = """
+query FetchQuoteLineItems($after: String, $limit: Int!) {
+  quotes(first: $limit, after: $after) {
+    nodes {
+      id
+      quoteNumber
+      quoteStatus
+      title
+      lineItems(first: 50) {
         nodes {
           id
-          title
-          quoteNumber
-          quoteStatus
-          amounts {
-            subtotal
-            total
-          }
-          client {
-            firstName
-            lastName
-          }
+          name
+          description
+          quantity
+          unitCost
+          totalPrice
+          taxable
           createdAt
+          updatedAt
+          linkedProductOrService {
+            id
+            name
+            description
+            category
+            defaultUnitCost
+            internalUnitCost
+            markup
+            taxable
+            visible
+          }
         }
       }
+      jobberWebUri
+      createdAt
+      updatedAt
     }
-    """ % limit
+    pageInfo {
+      endCursor
+      hasNextPage
+    }
+  }
+}
+"""
+
+def fetch_quotes(access_token, after=None, limit=5):
+    """Fetch a limited number of quotes with line items from the Jobber GraphQL API"""
+    graphql_url = "https://api.getjobber.com/api/graphql"
     
     headers = {
         "Authorization": f"Bearer {access_token}",
@@ -201,10 +222,20 @@ def fetch_quotes(access_token, limit=5):
         "X-JOBBER-GRAPHQL-VERSION": API_VERSION
     }
     
+    # Create variables object with both cursor and limit
+    variables = {
+        "limit": limit
+    }
+    if after:
+        variables["after"] = after
+    
     response = requests.post(
         graphql_url,
         headers=headers,
-        json={"query": query}
+        json={
+            "query": fetch_quotes_query,
+            "variables": variables
+        }
     )
     
     if response.status_code == 200:

@@ -3,9 +3,8 @@ import json
 from getterFunctions import fetch_quotes, fetch_jobs, get_job_count, get_quote_count, fetch_jobs_all_data
 from queryCost import log_query_cost
 from config import CLIENT_ID, CLIENT_SECRET, REFRESH_TOKEN
-
+from googleSheetsManager import upload_inventory_data
 import pprint
-
 
 def look_at_all_data():
     print("Getting access token...")
@@ -154,6 +153,119 @@ def remove_sku_from_name(name, sku):
     
     return result
 
+def process_quote_inventory(quote):
+    """
+    Process a single quote and extract only PRODUCT inventory items with their details.
+    
+    Args:
+        quote (dict): Quote data from the Jobber API
+        
+    Returns:
+        list: List of InventoryItem objects
+    """
+    inventory_items = []
+    
+    # Check if the quote has line items
+    if 'lineItems' not in quote or 'nodes' not in quote['lineItems']:
+        return inventory_items
+    
+    # Add logging to track the quote
+    quote_id = quote.get('id', 'unknown')
+    
+    for line_item in quote['lineItems']['nodes']:
+        # Track where we found the data
+        source_locations = []
+        
+        # Initialize an inventory item
+        item = InventoryItem()
+        
+        # Check if this is a PRODUCT (either directly or in linked item)
+        is_product = False
+        
+        # Log the line item for debugging
+        line_item_name = line_item.get('name', 'No name')
+        
+        # In quotes, we don't have a direct category field on line items
+        # We need to check linkedProductOrService instead
+        if 'linkedProductOrService' in line_item and line_item['linkedProductOrService']:
+            linked_item = line_item['linkedProductOrService']
+                            
+            if 'category' in linked_item and linked_item['category'] == 'PRODUCT':
+                is_product = True
+                item.category = 'PRODUCT'
+                source_locations.append('linkedProductOrService.category')
+        
+        # MODIFIED: We now only consider items with UNKNOWN category if they have keywords 
+        # that suggest they're products, not services
+        if not is_product and 'name' in line_item and line_item['name']:
+            # Check if the name suggests this is a service
+            service_keywords = ['installation', 'labor', 'service', 'removal', 'maintenance', 
+                               'repair', 'visit', 'rental', 'consultation', 'delivery']
+            
+            name_lower = line_item['name'].lower()
+            is_likely_service = any(keyword in name_lower for keyword in service_keywords)
+            
+            if is_likely_service:
+                continue
+            
+            # If we get here, we'll include it with UNKNOWN category
+            item.category = 'UNKNOWN'
+            source_locations.append('lineItem.name (category unknown)')
+            is_product = True
+        
+        # Skip if this doesn't seem to be a product
+        if not is_product:
+            continue
+
+        if 'description' in line_item and line_item['description']:
+            item.description = line_item['description']
+            source_locations.append('lineItem.description')
+        
+        # Extract data from direct line item
+        if 'name' in line_item and line_item['name']:
+            source_locations.append('lineItem.name')
+            # Try to extract SKU from name
+            item.sku = extract_sku_from_name(line_item['name'])
+            if item.sku is not None and item.description is not None:
+                item.name = item.description
+                # Remove SKU from name if it exists
+                item.name = remove_sku_from_name(item.name, item.sku)
+            else:
+                item.name = line_item['name']
+            
+        # If there's a linked product/service, check it for more info
+        if 'linkedProductOrService' in line_item and line_item['linkedProductOrService']:
+            linked_item = line_item['linkedProductOrService']
+            
+            # If we didn't get a name from the line item, or the linked item has a different name
+            if ('name' in linked_item and linked_item['name'] and 
+                (not item.name or linked_item['name'] != item.name)):
+                source_locations.append('linkedProductOrService.name')
+                # Try to extract SKU from name if we don't have one yet
+                if not item.sku:
+                    item.sku = extract_sku_from_name(linked_item['name'])
+                    if item.sku is not None and item.description is not None:
+                        item.name = item.description
+                        # Remove SKU from name if it exists
+                        item.name = remove_sku_from_name(item.name, item.sku)
+                    else:
+                        item.name = linked_item['name']
+            
+            # If we didn't get a description, or the linked item has additional description
+            if ('description' in linked_item and linked_item['description'] and 
+                (not item.description or linked_item['description'] != item.description)):
+                item.description = linked_item['description']
+                source_locations.append('linkedProductOrService.description')
+        
+        # Record where we found the data
+        item.source_location = ', '.join(source_locations)
+        
+        # Add to our list if we have at least a name
+        if item.name:
+            inventory_items.append(item)
+    
+    return inventory_items
+
 def process_job_inventory(job):
     """
     Process a single job and extract only PRODUCT inventory items with their details.
@@ -261,6 +373,7 @@ def aggregate_inventory_by_name(inventory_items):
         # If SKU is None, use an empty string to avoid None-related issues
         name = item.name if item.name else ""
         sku = item.sku if item.sku else ""
+        description = item.description if item.description else ""
         key = (name, sku)
         
         # Increment the count for this name-SKU combination
@@ -272,7 +385,8 @@ def aggregate_inventory_by_name(inventory_items):
         result.append({
             "name": name,
             "sku": sku,
-            "count": count
+            "count": count,
+            "description": description
         })
     
     # Sort by count in descending order
@@ -350,8 +464,6 @@ def print_inventory_items(inventory_items):
     else:
         print("No inventory items found in the jobs.")
 
-
-
 def get_all_jobs(access_token):
             # Initialize variables for pagination
         cursor = None
@@ -364,6 +476,7 @@ def get_all_jobs(access_token):
         
         # Loop until we've fetched all jobs
         while has_next_page:
+        # for _ in range (5):
             batch_count += 1
             print(f"\nFetching batch {batch_count} of jobs...")
             
@@ -397,6 +510,185 @@ def get_all_jobs(access_token):
         
         return all_inventory_items
 
+def get_all_quotes(access_token):
+    """
+    Fetch all quotes from the Jobber API using pagination and extract inventory information.
+    
+    Args:
+        access_token (str): The access token for the Jobber API
+        
+    Returns:
+        list: A list of InventoryItem objects extracted from quote line items
+    """
+    # Initialize variables for pagination
+    cursor = None
+    has_next_page = True
+    all_quotes = []
+    batch_count = 0
+    
+    # Import time for sleep functionality
+    import time
+    
+    # Loop until we've fetched all quotes
+    while has_next_page:
+    # for _ in range (5):
+        batch_count += 1
+        print(f"\nFetching batch {batch_count} of quotes...")
+        
+        # Fetch 5 quotes at a time using cursor-based pagination
+        quotes_data = fetch_quotes(access_token, after=cursor, limit=5)
+        
+        # Extract quotes from this batch
+        batch_quotes = quotes_data["data"]["quotes"]["nodes"]
+        all_quotes.extend(batch_quotes)
+        
+        # Get pagination info for next batch
+        pagination_info = quotes_data["data"]["quotes"]["pageInfo"]
+        cursor = pagination_info["endCursor"]
+        has_next_page = pagination_info["hasNextPage"]
+        
+        print(f"Retrieved {len(batch_quotes)} quotes in this batch")
+        print(f"Total quotes fetched so far: {len(all_quotes)}")
+        
+        if has_next_page:
+            print("Sleeping for 1 second before next batch...")
+            time.sleep(1)
+        else:
+            print("No more quotes to fetch.")
+    
+    # Process all quotes to extract inventory information
+    all_inventory_items = []
+    
+    for quote in all_quotes:
+        quote_inventory = process_quote_inventory(quote)
+        all_inventory_items.extend(quote_inventory)
+    
+    return all_inventory_items
+
+def filter_out_services(inventory_items):
+    """
+    Filter out items that are likely services based on their name, description, or category.
+    
+    Args:
+        inventory_items (list): List of InventoryItem objects
+        
+    Returns:
+        list: Filtered list of InventoryItem objects (only products)
+    """
+    service_keywords = [
+        'installation', 'labor', 'service', 'removal', 'maintenance', 
+        'repair', 'visit', 'rental', 'consultation', 'delivery', 
+        'setup', 'configuration', 'assembly', 'training', 'support'
+    ]
+    
+    filtered_items = []
+    filtered_out_count = 0
+    
+    print("\n=== FILTERING OUT SERVICES ===")
+    
+    for item in inventory_items:
+        # Always keep items with confirmed PRODUCT category
+        if item.category == 'PRODUCT':
+            filtered_items.append(item)
+            continue
+        
+        # Check name and description for service keywords
+        is_likely_service = False
+        
+        if item.name:
+            name_lower = item.name.lower()
+            if any(keyword in name_lower for keyword in service_keywords):
+                print(f"Filtered out (name): {item.name}")
+                filtered_out_count += 1
+                is_likely_service = True
+        
+        if not is_likely_service and item.description:
+            desc_lower = item.description.lower()
+            if any(keyword in desc_lower for keyword in service_keywords):
+                print(f"Filtered out (description): {item.name} - {item.description}")
+                filtered_out_count += 1
+                is_likely_service = True
+        
+        # Keep the item if it doesn't look like a service
+        if not is_likely_service:
+            filtered_items.append(item)
+    
+    print(f"Filtered out {filtered_out_count} likely service items")
+    print(f"Remaining inventory items: {len(filtered_items)}")
+    
+    return filtered_items
+
+def combine_inventory(quotes_inventory, jobs_inventory):
+    """
+    Combines inventory items from quotes and jobs inventories.
+    Items with the same SKU and name will have their counts stored separately.
+    Description from jobs_inventory is prioritized if available.
+    
+    Args:
+        quotes_inventory (list): List of inventory items from quotes
+        jobs_inventory (list): List of inventory items from jobs
+        
+    Returns:
+        list: Combined inventory with separate quotes_count and jobs_count for matching items,
+             first sorted by presence of SKU (items with SKUs first), then alphabetically by SKU or name
+    """
+    combined_inventory = []
+    inventory_map = {}
+    
+    # Process all quotes inventory items
+    for item in quotes_inventory:
+        # Create a unique key for each item based on sku and name only
+        key = (item['sku'], item['name'])
+        inventory_map[key] = {
+            'sku': item['sku'],
+            'name': item['name'],
+            'description': item['description'],
+            'quotes_count': item['count'],
+            'jobs_count': 0  # Initialize jobs_count to 0
+        }
+    
+    # Process all jobs inventory items
+    for item in jobs_inventory:
+        key = (item['sku'], item['name'])
+        if key in inventory_map:
+            # Item exists in quotes inventory, set the jobs_count
+            inventory_map[key]['jobs_count'] = item['count']
+            # Prioritize description from jobs_inventory
+            inventory_map[key]['description'] = item['description']
+        else:
+            # New item, add it to the map with quotes_count as 0
+            inventory_map[key] = {
+                'sku': item['sku'],
+                'name': item['name'],
+                'description': item['description'],
+                'quotes_count': 0,  # Initialize quotes_count to 0
+                'jobs_count': item['count']
+            }
+    
+    # Convert the map back to a list
+    combined_inventory = list(inventory_map.values())
+    
+    # First, separate items with and without SKUs
+    with_sku = []
+    without_sku = []
+    
+    for item in combined_inventory:
+        if item['sku']:
+            with_sku.append(item)
+        else:
+            without_sku.append(item)
+    
+    # Sort items with SKUs alphabetically by SKU
+    with_sku.sort(key=lambda x: x['sku'].lower() if x['sku'] else "")
+    
+    # Sort items without SKUs alphabetically by name
+    without_sku.sort(key=lambda x: x['name'].lower() if x['name'] else "")
+    
+    # Combine the sorted lists, with SKU items first
+    combined_inventory = with_sku + without_sku
+    
+    return combined_inventory
+
 def main():
     try:
         print("Getting access token...")
@@ -408,16 +700,26 @@ def main():
             new_refresh_token = token_data["refresh_token"]
             print("New refresh token received - save this for future use")
         
-        all_inventory_items = get_all_jobs(access_token)
-
+        all_quote_inventory_items = get_all_quotes(access_token)
+        all_job_inventory_items = get_all_jobs(access_token)
+        
         # Print aggregated inventory by name
-        name_counts = aggregate_inventory_by_name(all_inventory_items)
-        pprint.pprint(name_counts)
+        aggregated_quotes_inventory = aggregate_inventory_by_name(all_quote_inventory_items)
+        aggregated_jobs_inventory = aggregate_inventory_by_name(all_job_inventory_items)
 
+        # Combine the inventories and sort alphabetically by name
+        combined_inventory = combine_inventory(aggregated_quotes_inventory, aggregated_jobs_inventory)
+        print("\nCombined Inventory (Quotes + Jobs, sorted alphabetically by name):")
+        pprint.pprint(combined_inventory)
+        
+        success = upload_inventory_data(combined_inventory)
+        if success:
+            print("Inventory data uploaded successfully!")
+        else:
+            print("Failed to upload inventory data.")
                 
     except Exception as e:
         print(f"Error: {str(e)}")
             
-        
 if __name__ == "__main__":
     main()
