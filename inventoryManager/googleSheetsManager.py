@@ -178,9 +178,12 @@ def upload_inventory_data(data):
             name_idx = headers.index("Part")
             sku_idx = headers.index("Part No.")
             description_idx = headers.index("Description")
+            current_inv_idx = headers.index("Current Inv")
             quote_idx = headers.index("Quote QTY")
             job_idx = headers.index("Job QTY")
-            logger.debug(f"Column indices - Name: {name_idx}, SKU: {sku_idx}, Description: {description_idx}, Quote: {quote_idx}, Job: {job_idx}")
+            total_allocated_idx = headers.index("Total allocated")
+            available_qty_idx = headers.index("Available QTY")
+            logger.debug(f"Column indices - Name: {name_idx}, SKU: {sku_idx}, Description: {description_idx}, Current Inv: {current_inv_idx}, Quote: {quote_idx}, Job: {job_idx}, Total Allocated: {total_allocated_idx}, Available QTY: {available_qty_idx}")
         except ValueError as e:
             logger.error(f"Column header error: {e}")
             return False
@@ -220,7 +223,21 @@ def upload_inventory_data(data):
                 cells_to_update.append(gspread.Cell(row=row_num, col=quote_idx+1, value=quotes_count))
                 cells_to_update.append(gspread.Cell(row=row_num, col=job_idx+1, value=jobs_count))
                 cells_to_update.append(gspread.Cell(row=row_num, col=description_idx+1, value=description))
-                logger.debug(f"Updating existing item: {name} (SKU: {sku})")
+                
+                # Add formula for Total allocated column: Quote QTY + Job QTY
+                total_allocated_col_letter = chr(65 + total_allocated_idx)
+                quote_col_letter = chr(65 + quote_idx)
+                job_col_letter = chr(65 + job_idx)
+                total_allocated_formula = f"={quote_col_letter}{row_num}+{job_col_letter}{row_num}"
+                cells_to_update.append(gspread.Cell(row=row_num, col=total_allocated_idx+1, value=total_allocated_formula))
+                
+                # Add formula for Available QTY column: Current Inv - Job QTY
+                available_col_letter = chr(65 + available_qty_idx)
+                current_inv_col_letter = chr(65 + current_inv_idx)
+                available_formula = f"={current_inv_col_letter}{row_num}-{job_col_letter}{row_num}"
+                cells_to_update.append(gspread.Cell(row=row_num, col=available_qty_idx+1, value=available_formula))
+                
+                logger.debug(f"Updating existing item: {name} (SKU: {sku}) with formulas")
             else:
                 # Prepare new row
                 new_row = [""] * len(headers)
@@ -229,6 +246,8 @@ def upload_inventory_data(data):
                 new_row[description_idx] = description
                 new_row[quote_idx] = quotes_count
                 new_row[job_idx] = jobs_count
+                
+                # For new rows, we'll add the formulas during the batch update after they're added
                 new_rows.append(new_row)
                 logger.debug(f"Adding new item: {name} (SKU: {sku})")
         
@@ -255,6 +274,29 @@ def upload_inventory_data(data):
                 start_cell = f"A{start_row}"
                 worksheet.update(start_cell, new_rows, value_input_option='USER_ENTERED')
                 logger.debug(f"Added new rows starting at row {start_row}")
+                
+                # Now add formulas for the newly added rows
+                formula_cells = []
+                for i, _ in enumerate(new_rows):
+                    row_num = start_row + i
+                    
+                    # Add formula for Total allocated column: Quote QTY + Job QTY
+                    total_allocated_col_letter = chr(65 + total_allocated_idx)
+                    quote_col_letter = chr(65 + quote_idx)
+                    job_col_letter = chr(65 + job_idx)
+                    total_allocated_formula = f"={quote_col_letter}{row_num}+{job_col_letter}{row_num}"
+                    formula_cells.append(gspread.Cell(row=row_num, col=total_allocated_idx+1, value=total_allocated_formula))
+                    
+                    # Add formula for Available QTY column: Current Inv - Job QTY
+                    available_col_letter = chr(65 + available_qty_idx)
+                    current_inv_col_letter = chr(65 + current_inv_idx)
+                    available_formula = f"={current_inv_col_letter}{row_num}-{job_col_letter}{row_num}"
+                    formula_cells.append(gspread.Cell(row=row_num, col=available_qty_idx+1, value=available_formula))
+                
+                # Update the formula cells
+                if formula_cells:
+                    worksheet.update_cells(formula_cells, value_input_option='USER_ENTERED')
+                    logger.debug(f"Added formulas to {len(formula_cells)//2} new rows")
         
         # Update existing cells in batches to avoid API limits
         if cells_to_update:
