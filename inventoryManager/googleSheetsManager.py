@@ -191,14 +191,24 @@ def upload_inventory_data(data):
         # Create a mapping of existing rows for quick lookup
         # Key: (name, sku), Value: row_index
         existing_rows = {}
+        logger.info(f"Processing {len(all_values)-1} existing rows from spreadsheet")
+        print(f"Total rows read from sheet: {len(all_values)}")
+        
         for i, row in enumerate(all_values[1:], start=2):  # Start from 2 as 1 is header
             if len(row) > max(name_idx, sku_idx):  # Ensure row has enough columns
                 name_val = row[name_idx] if name_idx < len(row) else ""
                 sku_val = row[sku_idx] if sku_idx < len(row) else ""
                 key = (name_val, sku_val)
                 existing_rows[key] = i
+                # Print first few rows to see the data being loaded
+                if i < 7:  # Only print first 5 items for debugging
+                    print(f"Loaded existing item from row {i}: '{name_val}' (SKU: '{sku_val}')")
         
         logger.info(f"Found {len(existing_rows)} existing items in spreadsheet")
+        # Debug print the number of empty key entries if any
+        empty_keys = sum(1 for k in existing_rows.keys() if not k[0] and not k[1])
+        if empty_keys > 0:
+            print(f"WARNING: Found {empty_keys} empty entries in existing_rows keys")
         
         # Process each item in our data
         processed_keys = set()
@@ -249,7 +259,18 @@ def upload_inventory_data(data):
                 
                 # For new rows, we'll add the formulas during the batch update after they're added
                 new_rows.append(new_row)
-                logger.debug(f"Adding new item: {name} (SKU: {sku})")
+                # Add detailed logging about the new item that wasn't found
+                logger.info(f"Adding new item: {name} (SKU: {sku})")
+                # Print more details to help debug why matching failed
+                print(f"NEW ITEM NOT MATCHED IN SHEET: '{name}' (SKU: '{sku}')")
+                # Print existing keys for comparison 
+                if len(existing_rows) < 10:  # Only print if there aren't too many rows
+                    print("Existing keys in sheet:")
+                    for existing_key in existing_rows.keys():
+                        print(f"  - '{existing_key[0]}' (SKU: '{existing_key[1]}')")
+                else:
+                    print(f"There are {len(existing_rows)} existing items in sheet")
+                print(f"Adding new item: {name} (SKU: {sku})")
         
         # Zero out quotes and jobs for rows not in our data - adjust row number
         logger.info("Processing items no longer in inventory data")

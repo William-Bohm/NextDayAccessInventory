@@ -5,6 +5,7 @@ from queryCost import log_query_cost
 from config import CLIENT_ID, CLIENT_SECRET, REFRESH_TOKEN
 from googleSheetsManager import upload_inventory_data
 import pprint
+import argparse
 
 def look_at_all_data():
     print("Getting access token...")
@@ -68,7 +69,6 @@ def look_at_all_data():
         for i, job in enumerate(all_jobs):
             job_info = f"Job {i+1}: ID {job['id']}, Title: {job.get('title', 'No title')}"
             f.write(job_info + "\n")
-            print(job_info)
 
 def get_access_token(client_id, client_secret, refresh_token):
     """Get a new access token using the refresh token"""
@@ -103,74 +103,31 @@ class InventoryItem:
     def __str__(self):
         return f"Name: {self.name}, SKU: {self.sku}, Description: {self.description}"
 
-def extract_sku_from_name(name):
+def is_name_sku(name):
     """
-    Attempt to extract SKU-like patterns from product names.
-    Common patterns include PS###WR, BL###WR, etc.
+    Check if the entire name appears to be a SKU.
+    Returns True if the name is a SKU, False otherwise.
+    
+    SKUs can include:
+    - All caps with numbers (and optional dashes)
+    - At least 3 characters
+    - Not common words
     """
     if not name:
-        return None
+        return False
     
     # Look for common SKU patterns
     import re
     
-    # First check if the entire name is a potential SKU (all caps, no spaces)
-    if re.match(r'^[A-Z0-9]+$', name) and len(name) >= 3:
-        return name
-    
-    # Pattern 1: Standard SKUs like PS636WR, BL342WR, RAEZ0110, etc.
-    sku_pattern1 = re.compile(r'\b([A-Z]{2,}\d+[A-Z0-9]*)\b')
-    match = sku_pattern1.search(name)
-    if match:
-        return match.group(1)
-    
-    # Pattern 2: All-letter SKUs like PSCK, RPGATE, ESCORPR (at least 3 uppercase letters)
-    sku_pattern2 = re.compile(r'\b([A-Z]{3,})\b')
-    match = sku_pattern2.search(name)
-    if match:
-        potential_sku = match.group(1)
+    # Check if the entire name is a potential SKU (all caps, numbers, and dashes)
+    # Modified to allow dashes in SKUs
+    if re.match(r'^[A-Z0-9-]+$', name) and len(name) >= 3:
         # Avoid matching common words that might appear in all caps
         common_words = ['AND', 'THE', 'FOR', 'WITH', 'FROM', 'UNIT', 'HAND', 'WIDE', 'LONG', 'HIGH', 'TALL']
-        if potential_sku not in common_words:
-            return potential_sku
+        if name not in common_words:
+            return True
     
-    return None
-
-def remove_sku_from_name(name, sku):
-    """
-    Remove the SKU from the name string if it exists.
-    """
-    if not name or not sku:
-        return name
-    
-    # If the name is exactly the SKU, and we have a description elsewhere,
-    # we should return an empty string so the description can be used as the name
-    if name.strip() == sku:
-        return ""
-    
-    # Create a pattern that matches the SKU with optional surrounding characters
-    # This handles cases like "PS636WR - Description" or "Description (PS636WR)"
-    import re
-    patterns = [
-        rf'\b{re.escape(sku)}\b\s*[-:]\s*',  # "SKU - " or "SKU: "
-        rf'\s*[-:]\s*\b{re.escape(sku)}\b',  # " - SKU" or ": SKU"
-        rf'\s*\({re.escape(sku)}\)\s*',      # " (SKU) "
-        rf'\b{re.escape(sku)}\b\s*,\s*',     # "SKU, " 
-        rf'\s*\b{re.escape(sku)}\b,?\s*',    # Just the SKU with spaces, optionally followed by comma
-    ]
-    
-    result = name
-    for pattern in patterns:
-        result = re.sub(pattern, ' ', result)
-    
-    # Clean up extra whitespace and ensure no leading/trailing spaces
-    result = re.sub(r'\s+', ' ', result).strip()
-    
-    # One final check for any trailing commas and clean them up
-    if result.endswith(','):
-        result = result[:-1].strip()
-    
-    return result
+    return False
 
 def process_quote_inventory(quote):
     """
@@ -243,18 +200,20 @@ def process_quote_inventory(quote):
         # Extract data from direct line item
         if 'name' in line_item and line_item['name']:
             source_locations.append('lineItem.name')
-            # Try to extract SKU from name
-            item.sku = extract_sku_from_name(line_item['name'])
-            if item.sku is not None:
-                # If name is exactly the SKU and we have a description, use description as name
-                if line_item['name'].strip() == item.sku and item.description:
+            # Check if the name is a SKU
+            if is_name_sku(line_item['name']):
+                # If name is a SKU, set sku to name
+                item.sku = line_item['name']
+                # If we have a description, use it as the name
+                if item.description:
                     item.name = item.description
                 else:
+                    # Otherwise keep the name as is
                     item.name = line_item['name']
-                    # Remove SKU from name if it exists
-                    item.name = remove_sku_from_name(item.name, item.sku)
             else:
+                # If name is not a SKU, keep name as is and set sku to None
                 item.name = line_item['name']
+                item.sku = None
             
         # If there's a linked product/service, check it for more info
         if 'linkedProductOrService' in line_item and line_item['linkedProductOrService']:
@@ -264,23 +223,23 @@ def process_quote_inventory(quote):
             if ('name' in linked_item and linked_item['name'] and 
                 (not item.name or linked_item['name'] != item.name)):
                 source_locations.append('linkedProductOrService.name')
-                # Try to extract SKU from name if we don't have one yet
-                if not item.sku:
-                    item.sku = extract_sku_from_name(linked_item['name'])
-                    if item.sku is not None:
-                        # If linked name is exactly the SKU and we have a description, use description as name
-                        if linked_item['name'].strip() == item.sku and item.description:
-                            item.name = item.description
-                        else:
-                            item.name = linked_item['name']
-                            # Remove SKU from name if it exists
-                            item.name = remove_sku_from_name(item.name, item.sku)
+                # Check if the linked item name is a SKU and we don't have a SKU yet
+                if not item.sku and is_name_sku(linked_item['name']):
+                    # If linked name is a SKU, set sku to linked name
+                    item.sku = linked_item['name']
+                    # If we have a description, use it as the name
+                    if item.description:
+                        item.name = item.description
                     else:
+                        # Otherwise keep the linked name as is
                         item.name = linked_item['name']
+                else:
+                    # If linked name is not a SKU, keep it as name and don't change sku
+                    item.name = linked_item['name']
             
             # If we didn't get a description, or the linked item has additional description
             if ('description' in linked_item and linked_item['description'] and 
-                (not item.description or linked_item['description'] != item.description)):
+                (item.description is None)):
                 item.description = linked_item['description']
                 source_locations.append('linkedProductOrService.description')
         
@@ -337,18 +296,20 @@ def process_job_inventory(job):
         # Extract data from direct line item
         if 'name' in line_item and line_item['name']:
             source_locations.append('lineItem.name')
-            # Try to extract SKU from name
-            item.sku = extract_sku_from_name(line_item['name'])
-            if item.sku is not None:
-                # If name is exactly the SKU and we have a description, use description as name
-                if line_item['name'].strip() == item.sku and item.description:
+            # Check if the name is a SKU
+            if is_name_sku(line_item['name']):
+                # If name is a SKU, set sku to name
+                item.sku = line_item['name']
+                # If we have a description, use it as the name
+                if item.description:
                     item.name = item.description
                 else:
+                    # Otherwise keep the name as is
                     item.name = line_item['name']
-                    # Remove SKU from name if it exists
-                    item.name = remove_sku_from_name(item.name, item.sku)
             else:
+                # If name is not a SKU, keep name as is and set sku to None
                 item.name = line_item['name']
+                item.sku = None
             
         # If there's a linked product/service, check it for more info
         if 'linkedProductOrService' in line_item and line_item['linkedProductOrService']:
@@ -358,23 +319,23 @@ def process_job_inventory(job):
             if ('name' in linked_item and linked_item['name'] and 
                 (not item.name or linked_item['name'] != item.name)):
                 source_locations.append('linkedProductOrService.name')
-                # Try to extract SKU from name if we don't have one yet
-                if not item.sku:
-                    item.sku = extract_sku_from_name(linked_item['name'])
-                    if item.sku is not None:
-                        # If linked name is exactly the SKU and we have a description, use description as name
-                        if linked_item['name'].strip() == item.sku and item.description:
-                            item.name = item.description
-                        else:
-                            item.name = linked_item['name']
-                            # Remove SKU from name if it exists
-                            item.name = remove_sku_from_name(item.name, item.sku)
+                # Check if the linked item name is a SKU and we don't have a SKU yet
+                if not item.sku and is_name_sku(linked_item['name']):
+                    # If linked name is a SKU, set sku to linked name
+                    item.sku = linked_item['name']
+                    # If we have a description, use it as the name
+                    if item.description:
+                        item.name = item.description
                     else:
+                        # Otherwise keep the linked name as is
                         item.name = linked_item['name']
+                else:
+                    # If linked name is not a SKU, keep it as name and don't change sku
+                    item.name = linked_item['name']
             
             # If we didn't get a description, or the linked item has additional description
             if ('description' in linked_item and linked_item['description'] and 
-                (not item.description or linked_item['description'] != item.description)):
+                (item.description is None)):
                 item.description = linked_item['description']
                 source_locations.append('linkedProductOrService.description')
         
@@ -409,14 +370,14 @@ def aggregate_inventory_by_name(inventory_items):
         name = item.name if item.name else ""
         sku = item.sku if item.sku else ""
         description = item.description if item.description else ""
-        key = (name, sku)
+        key = (name, sku, description)
         
         # Increment the count for this name-SKU combination
         item_counts[key] = item_counts.get(key, 0) + 1
     
     # Convert to a list of dictionaries with name, SKU, and count
     result = []
-    for (name, sku), count in item_counts.items():
+    for (name, sku, description), count in item_counts.items():
         result.append({
             "name": name,
             "sku": sku,
@@ -486,14 +447,6 @@ def print_inventory_items(inventory_items):
                 f.write(f"  Category: {item.category}\n")
                 f.write(f"  Source: {item.source_location}\n")
                 f.write("\n")
-                
-                # Also print first 10 items to console for immediate review
-                if idx <= 10:
-                    print(f"\nItem #{idx}:")
-                    print(f"  Name: {item.name}")
-                    print(f"  Description: {item.description}")
-                    print(f"  Category: {item.category}")
-                    print(f"  Source: {item.source_location}")
         
         print(f"\nDetailed information for all {len(items_without_sku)} items without SKUs has been saved to 'items_without_sku.txt'")
     else:
@@ -600,46 +553,6 @@ def get_all_quotes(access_token):
     
     return all_inventory_items
 
-def filter_out_services(inventory_items):
-    """
-    Filter out items that are likely services based on their name, description, or category.
-    
-    Args:
-        inventory_items (list): List of InventoryItem objects
-        
-    Returns:
-        list: Filtered list of InventoryItem objects (only products)
-    """
-    service_keywords = [
-        'labor', 'service', 'removal', 'maintenance', 
-        'repair', 'visit', 'consultation', 'delivery', 
-        'setup', 'configuration', 'assembly', 'training', 'fee', 'shipping', 'rental', 'purchase'
-    ]
-    
-    filtered_items = []
-    filtered_out_count = 0
-    
-    print("\n=== FILTERING OUT SERVICES ===")
-    
-    for item in inventory_items:
-        # Convert name to lowercase for case-insensitive matching
-        name_lower = item.name.lower() if item.name else ""
-        
-        # Check if any service keyword appears in the name or description
-        is_service = any(keyword in name_lower for keyword in service_keywords)
-        
-        # Keep items that don't appear to be services
-        if not is_service:
-            filtered_items.append(item)
-        else:
-            print(f"Filtered out: {item.name} - {item.description}")
-            filtered_out_count += 1
-    
-    print(f"Filtered out {filtered_out_count} service items.")
-    print(f"Remaining product items: {len(filtered_items)}")
-    
-    return filtered_items
-
 def combine_inventory(quotes_inventory, jobs_inventory):
     """
     Combines inventory items from quotes and jobs inventories.
@@ -686,7 +599,6 @@ def combine_inventory(quotes_inventory, jobs_inventory):
                 'quotes_count': 0,  # Initialize quotes_count to 0
                 'jobs_count': item['count']
             }
-    
     # Convert the map back to a list
     combined_inventory = list(inventory_map.values())
     
@@ -711,8 +623,132 @@ def combine_inventory(quotes_inventory, jobs_inventory):
     
     return combined_inventory
 
+def read_inventory_csv(csv_path="inventory_download.csv", formatSkuData=True):
+    """
+    Read inventory data from a CSV file and format it according to our naming/SKU conventions.
+    
+    Args:
+        csv_path (str): Path to the CSV file
+        formatSkuData (bool): Whether to apply SKU detection and rearrangement logic (default: True)
+        
+    Returns:
+        list: List of InventoryItem objects
+    """
+    import csv
+    
+    inventory_items = []
+    
+    try:
+        with open(csv_path, 'r', encoding='utf-8') as csvfile:
+            reader = csv.DictReader(csvfile)
+            
+            for row in reader:
+                # Create a new inventory item
+                item = InventoryItem()
+                
+                # Get the name from the first column
+                name = row.get('Name', '')
+                description = row.get('Description', '')
+                category = row.get('Category', '')
+                
+                # Apply name/SKU logic only if formatSkuData is True
+                if formatSkuData and is_name_sku(name):
+                    # If name is a SKU, set sku to name
+                    item.sku = name
+                    # Use description as the name
+                    item.name = description
+                else:
+                    # If name is not a SKU or formatSkuData is False, keep name as is
+                    item.name = name
+                    # Set to empty string instead of None for consistency
+                    item.sku = ""
+                
+                # Set description and category
+                item.description = description
+                item.category = category
+                item.source_location = "CSV Import"
+                
+                inventory_items.append(item)
+                
+        print(f"Successfully read {len(inventory_items)} items from CSV file")
+        return inventory_items
+        
+    except Exception as e:
+        print(f"Error reading CSV file: {e}")
+        return []
+
+def upload_inventory_from_csv(csv_path="inventory_download.csv", formatSkuData=True):
+    """
+    Read inventory data from a CSV file and upload it to Google Sheets.
+    This function ensures no duplicates are created and preserves existing quantity data.
+    
+    Args:
+        csv_path (str): Path to the CSV file
+        formatSkuData (bool): Whether to apply SKU detection and rearrangement logic (default: True)
+        
+    Returns:
+        bool: True if successful, False otherwise
+    """
+    # Read the CSV file
+    inventory_items = read_inventory_csv(csv_path, formatSkuData)
+    
+    if not inventory_items:
+        print("No inventory items found in the CSV file.")
+        return False
+    
+    # Format the data for upload
+    # We set quotes_count and jobs_count to 0 for new items
+    # The upload function will preserve existing counts for items already in the sheet
+    upload_data = []
+    for item in inventory_items:
+        # Standardize: Use empty string for None SKUs
+        sku_value = item.sku if item.sku is not None else ""
+        
+        upload_data.append({
+            'name': item.name,
+            'sku': sku_value,
+            'description': item.description,
+            'quotes_count': 0,  # Set to 0 for new items
+            'jobs_count': 0     # Set to 0 for new items
+        })
+    
+    # Upload the data to Google Sheets
+    print(f"Uploading {len(upload_data)} inventory items to Google Sheets...")
+    success = upload_inventory_data(upload_data)
+    
+    if success:
+        print("Successfully uploaded inventory data to Google Sheets")
+    else:
+        print("Failed to upload inventory data to Google Sheets")
+    
+    return success
+
 def main():
     try:
+        # Set up command line argument parsing
+        parser = argparse.ArgumentParser(description='Inventory Management Tool')
+        parser.add_argument('--csv', action='store_true', help='Upload inventory from CSV file')
+        parser.add_argument('--csv-path', type=str, default='inventory_download.csv', 
+                            help='Path to the CSV file (default: inventory_download.csv)')
+        parser.add_argument('--all', action='store_true', 
+                            help='Process both quotes/jobs and CSV data')
+        
+        args = parser.parse_args()
+        
+        # If CSV upload is requested
+        if args.csv or args.all:
+            print(f"Uploading inventory from CSV file: {args.csv_path}")
+            csv_success = upload_inventory_from_csv(args.csv_path)
+            if csv_success:
+                print("CSV inventory data uploaded successfully!")
+            else:
+                print("Failed to upload CSV inventory data.")
+            
+            # If only CSV upload was requested, exit
+            if not args.all:
+                return
+        
+        # Continue with the regular process for quotes and jobs
         print("Getting access token...")
         token_data = get_access_token(CLIENT_ID, CLIENT_SECRET, REFRESH_TOKEN)
         access_token = token_data["access_token"]
@@ -725,16 +761,9 @@ def main():
         all_quote_inventory_items = get_all_quotes(access_token)
         all_job_inventory_items = get_all_jobs(access_token)
         
-        # Filter out services from both quotes and jobs inventories
-        print("\nFiltering out services from quote inventory items...")
-        filtered_quote_inventory = filter_out_services(all_quote_inventory_items)
-        
-        print("\nFiltering out services from job inventory items...")
-        filtered_job_inventory = filter_out_services(all_job_inventory_items)
-        
         # Print aggregated inventory by name
-        aggregated_quotes_inventory = aggregate_inventory_by_name(filtered_quote_inventory)
-        aggregated_jobs_inventory = aggregate_inventory_by_name(filtered_job_inventory)
+        aggregated_quotes_inventory = aggregate_inventory_by_name(all_quote_inventory_items)
+        aggregated_jobs_inventory = aggregate_inventory_by_name(all_job_inventory_items)
 
         # Combine the inventories and sort alphabetically by name
         combined_inventory = combine_inventory(aggregated_quotes_inventory, aggregated_jobs_inventory)
@@ -750,3 +779,4 @@ def main():
             
 if __name__ == "__main__":
     main()
+    
