@@ -19,7 +19,7 @@ load_dotenv()
 logger.info("Environment variables loaded")
 
 # Constants
-SHEET_NAME = "Inventory"
+SHEET_NAME = "Inventory"  # Default sheet name
 # Define row offset for headers - adjust this value to add more rows for metadata at the top
 HEADER_ROW_OFFSET = 5  # This means headers will start at row 5, leaving rows 1-4 for metadata
 COLUMN_HEADERS = [
@@ -80,9 +80,9 @@ def refresh_auth_if_needed(func):
     
     return wrapper
 
-def initialize_sheet(client, sheet_id):
+def initialize_sheet(client, sheet_id, sheet_name=SHEET_NAME):
     """Ensure the sheet exists with the correct column headers."""
-    logger.info(f"Initializing sheet with ID: {sheet_id}")
+    logger.info(f"Initializing sheet with ID: {sheet_id}, sheet name: {sheet_name}")
     try:
         # Open the spreadsheet
         spreadsheet = client.open_by_key(sheet_id)
@@ -90,12 +90,12 @@ def initialize_sheet(client, sheet_id):
         
         # Check if the inventory sheet exists, create it if it doesn't
         try:
-            worksheet = spreadsheet.worksheet(SHEET_NAME)
-            logger.debug(f"Found existing worksheet: {SHEET_NAME}")
+            worksheet = spreadsheet.worksheet(sheet_name)
+            logger.debug(f"Found existing worksheet: {sheet_name}")
         except gspread.exceptions.WorksheetNotFound:
-            logger.info(f"Worksheet '{SHEET_NAME}' not found, creating it")
+            logger.info(f"Worksheet '{sheet_name}' not found, creating it")
             # Create with more rows to accommodate the offset
-            worksheet = spreadsheet.add_worksheet(title=SHEET_NAME, rows=HEADER_ROW_OFFSET + 100, cols=len(COLUMN_HEADERS))
+            worksheet = spreadsheet.add_worksheet(title=sheet_name, rows=HEADER_ROW_OFFSET + 100, cols=len(COLUMN_HEADERS))
         
         # Get the current headers from the offset row
         try:
@@ -127,17 +127,18 @@ def initialize_sheet(client, sheet_id):
         return None
 
 @refresh_auth_if_needed
-def upload_inventory_data(data):
+def upload_inventory_data(data, sheet_name=SHEET_NAME):
     """
     Upload inventory data to Google Sheets.
     
     Args:
         data: List of dictionaries with keys 'name', 'sku', 'quotes_count', 'jobs_count', 'description'
+        sheet_name: Name of the worksheet to update (default: "Inventory")
     
     Returns:
         Boolean indicating success or failure
     """
-    logger.info(f"Starting upload of {len(data)} inventory items")
+    logger.info(f"Starting upload of {len(data)} inventory items to sheet: {sheet_name}")
     try:
         # Get sheet ID from environment
         sheet_id = os.getenv('GOOGLE_SHEETS_ID')
@@ -147,7 +148,7 @@ def upload_inventory_data(data):
         
         # Initialize client and sheet
         client = get_google_sheets_client()
-        worksheet = initialize_sheet(client, sheet_id)
+        worksheet = initialize_sheet(client, sheet_id, sheet_name)
         
         if not worksheet:
             logger.error("Failed to initialize worksheet")

@@ -1,0 +1,327 @@
+Name,Description,Category,Unit Price,Unit Cost,Bookable,Duration Minutes,Quantity Enabled,Minimum Quantity,Maximum Quantity,Taxable,Active
+RS1TNR,"Residential Step, 1 Tread, No Rails. Stand alone, does NOT attach  RS1TNR",Product,264.32,99.12,false,,"","","",true,true
+RS2TWR,"Residential Step, 2 Tread, With 2 line rails, fits 14"" to 21"" rise  RS2TWR",Product,501.39,188.02,false,,"","","",true,true
+RS3TWR,"Residential Step, 3 Tread, With 2 line rails, fits 21"" to 28"" rise  RS3TWR",Product,776.04,291.01,false,,"","","",true,true
+RS4TWR,"Residential Step, 4 Tread, With 2 line rails, fits 28"" to 35"" rise  RS4TWR",Product,998.32,374.37,false,,"","","",true,true
+RS5TWR,"Residential Step, 5 Tread, With 2 line rails, fits 35"" to 42"" rise  RS5TWR",Product,1223.29,458.74,false,,"","","",true,true
+RS6TWR,"Residential Step, 6 Tread, With 2 line rails, fits 42"" to 49"" rise  RS6TWR",Product,1446.13,542.3,false,,"","","",true,true
+RS7TWR,"Residential Step, 7 Tread, With 2 line rails, fits 42"" to 49"" rise  RS7TWR",Product,1575.04,590.64,false,,"","","",true,true
+RS8TWR,"Residential Step, 8 Tread, With 2 line rails, fits 42"" to 49"" rise  RS8TWR",Product,1780.36,667.64,false,,"","","",true,true
+RSL3636,"36 Residential Step Landing 36"" x 36"" includes 4 legs  RSL3636",Product,670.73,251.52,false,,"","","",true,true
+PS136WR,"Patriot Series 1' long x 36"" Starter Kit, 2 Loops, TP, TT36 PS136WR",Product,216.26,88.27,false,,"","","",true,true
+PS236WR,"Patriot Series 2' long x 36"" wide with handrails PS236WR",Product,455.63,185.97,false,,"","","",true,true
+PS336WR,"Patriot Series 3' long x 36"" wide with handrails PS336WR",Product,596.7,243.55,false,,"","","",true,true
+PS436WR,"Patriot Series 4' long x 36"" wide with handrails PS436WR",Product,743.58,303.5,false,,"","","",true,true
+PS536WR,"Patriot Series 5' long x 36"" wide with handrails PS536WR",Product,884.65,346.92,false,,"","","",true,true
+PS636WR,"Patriot Series 6' long x 36"" wide with handrails PS636WR",Product,973.72,381.85,false,,"","","",true,true
+PS836WR,"Patriot Series 8' long x 36"" wide with handrails PS836WR",Product,1080.05,480.02,false,,"","","",true,true
+PS148WR,"Patriot Series 1' long x 48"" Starter Kit, 2 Loops, TP, TT48 PS148WR",Product,271.87,101.95,false,,"","","",true,true
+PS248WR,"Patriot Series 2' long x 48"" wide with handrails PS248WR",Product,521.09,195.41,false,,"","","",true,true
+PS348WR,"Patriot Series 3' long x 48"" wide with handrails PS348WR",Product,704.85,264.32,false,,"","","",true,true
+PS448WR,"Patriot Series 4' long x 48"" wide with handrails PS448WR",Product,889.87,333.7,false,,"","","",true,true
+PS548WR,"Patriot Series 5' long x 48"" wide with handrails PS548WR",Product,1028.33,385.63,false,,"","","",true,true
+PS648WR,"Patriot Series 6' long x 48"" wide with handrails PS648WR",Product,1149.17,430.94,false,,"","","",true,true
+PS848WR,"Patriot Series 8' long x 48"" wide with handrails PS848WR",Product,1485.23,556.96,false,,"","","",true,true
+PS44U,Patriot Series 4 x 4 universal with rails and support,Product,1175.02,479.6,false,,"","","",true,true
+PS45T,Patriot Series 4 x 5 Turn with rails and support,Product,1246.17,508.64,false,,"","","",true,true
+PS454S,"Patriot Series 4 x 5, 4' entry with rails and support",Product,1246.17,508.64,false,,"","","",true,true
+PS455S,"Patriot Series 4 x 5, 5' entry with rails and support",Product,1246.17,508.64,false,,"","","",true,true
+PSGP55,"Patriot Series Aluminum Ground Pad 5x5, includes TT42",Product,948.06,355.52,false,,"","","",true,true
+PS55U,Patriot  Series 5 x 5 universal with rails and support,Product,1478.8,579.92,false,,"","","",true,true
+PS56T,Patriot Series 5 x 6 Turn with rails and support,Product,1674.34,627.88,false,,"","","",true,true
+PS565S,"Patriot Series 5 x 6, 5' Entry with rails and support",Product,1731.84,649.44,false,,"","","",true,true
+PS566S,"Patriot Series 5 x 6, 6' Entry with rails and support",Product,1709.54,641.08,false,,"","","",true,true
+ASB24,"Angle Support Bracket (over 30"" height use)",Product,13.84,5.19,false,,"","","",true,true
+ASB30,"Angle Support Bracket (over 30"" height use)",Product,16.37,6.14,false,,"","","",true,true
+BP,"Bridge Plate 3"" x 32""",Product,51.6,19.35,false,,"","","",true,true
+HRCAPPK,Handrail Cap Pack (8 pcs),Product,6.29,2.36,false,,"","","",true,true
+HTDK30,"Hurricane Tie Down Kit up to 30"" heights",Product,45.31,16.99,false,,"","","",true,true
+HTDK60,"Hurricane Tie Down Kit up to 60"" heights",Product,47.83,17.93,false,,"","","",true,true
+HTDK90,"Hurricane Tie Down Kit up to 90"" heights",Product,50.35,18.88,false,,"","","",true,true
+LRK,Lightening Rod Kit,Product,90.62,33.98,false,,"","","",true,true
+PSLOOP,Patriot Series Handrail Loop,Product,27.61,12.27,false,,"","","",true,true
+PSCK,Patriot Series Closure Kit (1 comes with each platform)BP+LOOP,Product,165.67,73.63,false,,"","","",true,true
+PSCKXL,Patriot Series Closure Kit (1 comes with each platform)BP+LOOP,Product,210.19,78.82,false,,"","","",true,true
+PSK,Pivet Swivel Kit,Product,44.05,16.52,false,,"","","",true,true
+RGP,"Rubber Ground Pad 4' x 6' x 3/4""",Product,118.23,78.82,false,,"","","",true,true
+RPGATE,"Residential Platform Gate for 36"" wide openings",Product,196.35,73.63,false,,"","","",true,true
+TP,"Transition Plate 9.25"" x 32"" with nonskid",Product,64.19,24.07,false,,"","","",true,true
+TPL,"Transition Plate Large 12"" x 32"" with nonskid",Product,105.73,39.65,false,,"","","",true,true
+TT36,"Transition Tread 36"" x 12""",Product,90.62,33.98,false,,"","","",true,true
+TT42,"Transition Tread 42"" x 12""",Product,104.47,39.17,false,,"","","",true,true
+TT48,"Transition Tread 48"" x 12""",Product,117.06,43.9,false,,"","","",true,true
+TT56,"Transition Tread 56"" x 12""",Product,139.71,52.39,false,,"","","",true,true
+TT60,"Transition Tread 60"" x 12""",Product,143.49,53.81,false,,"","","",true,true
+ULEG08,"U Channe Leg support 2"" - 6"" in height",Product,15.93,7.08,false,,"","","",true,true
+ULEG16,"U Channe Leg support 2"" - 12"" in height",Product,28.32,10.62,false,,"","","",true,true
+ULEG26,"U Channe Leg support 13"" - 22"" in height",Product,37.76,14.16,false,,"","","",true,true
+ULEG36,"U Channe Leg support 23"" - 32"" in height",Product,33.98,14.16,false,,"","","",true,true
+ULEG46,"U Channe Leg support 33"" - 42"" in height",Product,33.98,14.16,false,,"","","",true,true
+ULEG56,"U Channe Leg support 43"" - 52"" in height",Product,33.98,14.16,false,,"","","",true,true
+ULEG66,"U Channe Leg support 53"" - 62"" in height",Product,74.34,14.16,false,,"","","",true,true
+ULEG76,"U Channe Leg support 63"" - 72"" in height",Product,83.78,14.16,false,,"","","",true,true
+ULEG86,"U Channe Leg support 73"" - 82"" in height",Product,94.4,14.16,false,,"","","",true,true
+ULEG96,"U Channe Leg support 83"" - 92"" in height",Product,102.66,14.16,false,,"","","",true,true
+LSLEG20,"20"" Platform Legs for Entrada, Patriot & XM",Product,37.76,14.16,false,,"","","",true,true
+LSLEG30,"30"" Platform Legs for Entrada, Patriot & XM",Product,47.2,17.7,false,,"","","",true,true
+LSLEG40,"40"" Platform Legs for Entrada, Patriot & XM",Product,55.46,20.8,false,,"","","",true,true
+LSLEG50,"50"" Platform Legs for Entrada, Patriot & XM",Product,66.08,24.78,false,,"","","",true,true
+LSLEG60,"60"" Platform Legs for Entrada, Patriot & XM",Product,74.34,27.88,false,,"","","",true,true
+LSLEG70,"70"" Platform Legs for Entrada, Patriot & XM",Product,83.78,31.42,false,,"","","",true,true
+LSLEG80,"80"" Platform Legs for Entrada, Patriot & XM",Product,94.4,35.4,false,,"","","",true,true
+LSLEG90,"90"" Platform Legs for Entrada, Patriot & XM",Product,102.66,38.5,false,,"","","",true,true
+LSLEG100,"100"" Platform Legs for Entrada, Patriot & XM",Product,110.92,41.6,false,,"","","",true,true
+LSLEG110,"110"" Platform Legs for Entrada, Patriot & XM",Product,119.18,44.69,false,,"","","",true,true
+ES248SR,"Entranda Commercial Modular Ramp 2' x 48"" with Standard Rails 34""",Product,528.03,198.01,false,,"","","",true,true
+ES348SR,"Entranda Commercial Modular Ramp 3' x 48"" with Standard Rails 34""",Product,730.82,274.06,false,,"","","",true,true
+ES448SR,"Entrada Commercial Modular Ramp 4' x 48"" with Standard Rails 34""",Product,879.04,329.64,false,,"","","",true,true
+ES548SR,"Entrada Commercial Modular Ramp 5' x 48"" with Standard Rails 34""",Product,1088.9,408.34,false,,"","","",true,true
+ES648SR,"Entrada Commercial Modular Ramp 6' x 48"" with Standard Rails 34""",Product,1280.96,480.36,false,,"","","",true,true
+ES256SR,"Entrada Commercial Modular Ramp 2' x 56"" with Standard Rails 34""",Product,604.51,226.69,false,,"","","",true,true
+ES356SR,"Entrada Commercial Modular Ramp 3' x 56"" with Standard Rails 34""",Product,808.8,303.3,false,,"","","",true,true
+ES456SR,"Entrada Commercial Modular Ramp 4' x 56"" with Standard Rails 34""",Product,1012.91,379.84,false,,"","","",true,true
+ES556SR,"Entrada Commercial Modular Ramp 5' x 56"" with Standard Rails 34""",Product,1217.52,456.57,false,,"","","",true,true
+ES656SR,"Entrada Commercial Modular Ramp 6' x 56"" with Standard Rails 34""",Product,1421.57,533.09,false,,"","","",true,true
+ES248PR,"Entrada Commercial Modular Ramp 2' x 48"" with 42"" Guard Rails",Product,640.02,240.01,false,,"","","",true,true
+ES348PR,"Entrada Commercial Modular Ramp 3' x 48"" with 42"" Guard Rails",Product,880.1,330.04,false,,"","","",true,true
+ES448PR,"Entrada Commercial Modular Ramp 4' x 48"" with 42"" Guard Rails",Product,1111.64,416.87,false,,"","","",true,true
+ES548PR,"Entrada Commercial Modular Ramp 5' x 48"" with 42"" Guard Rails",Product,1288.45,483.17,false,,"","","",true,true
+ES648PR,"Entrada Commercial Modular Ramp 6' x 48"" with 42"" Guard Rails",Product,1574.85,590.57,false,,"","","",true,true
+ES256PR,"Entrada Commercial Modular Ramp 2' x 56"" with 42"" Guard Rails",Product,780.63,292.74,false,,"","","",true,true
+ES356PR,"Entrada Commercial Modular Ramp 3' x 56"" with 42"" Guard Rails",Product,1046.15,392.31,false,,"","","",true,true
+ES456PR,"Entrada Commercial Modular Ramp 4' x 56"" with 42"" Guard Rails",Product,1326.24,497.34,false,,"","","",true,true
+ES556PR,"Entrada Commercial Modular Ramp 5' x 56"" with 42"" Guard Rails",Product,1544.54,579.2,false,,"","","",true,true
+ES656PR,"Entrada Commercial Modular Ramp 6' x 56"" with 42"" Guard Rails",Product,1886.7,707.51,false,,"","","",true,true
+ES44SR,"Entrada Commercial Modular Platform 4' x 4' with 34"" 2 line Rails",Product,1278.94,479.6,false,,"","","",true,true
+ES45TSR,"Entrada Commercial Modular Platform 4' x 5' Turn with 34"" 2 line Rails",Product,1356.38,508.64,false,,"","","",true,true
+ES45E4SR,"Entrada Commercial Modular Platform 4' x 5' 4' side Entry with 34"" 2 line Rails",Product,1356.38,508.64,false,,"","","",true,true
+ES45E5SR,"Entrada Commercial Modular Platform 4' x 5' 5' side Entry with 34"" 2 line Rails",Product,1356.38,508.64,false,,"","","",true,true
+ES55SR,"Entrada Commercial Modular Platform 5' x 5' with 34"" 2 line Rails",Product,1546.46,579.92,false,,"","","",true,true
+ES56TSR,"Entrada Commercial Modular Platform 6' x 5' 5' Turn with 34"" 2 line Rails",Product,1674.34,627.88,false,,"","","",true,true
+ES56E5SR,"Entrada Commercial Modular Platform 6' x 5' 5' side Entry with 34"" 2 line Rails",Product,1731.84,649.44,false,,"","","",true,true
+ES56E6SR,"Entrada Commercial Modular Platform 6' x 5' 6' side Entry with 34"" 2 line Rails",Product,1709.54,641.08,false,,"","","",true,true
+ES66SR,"Entrada Commercial Modular Platform 6' x6' with 34"" 2 line Rails",Product,1865.6,699.6,false,,"","","",true,true
+ES44PR,"Entrada Commercial Modular Platform 4' x 4' with 42"" Guard Rails",Product,1414.6,530.48,false,,"","","",true,true
+ES45TPR,"Entrada Commercial Modular Platform 4' x 5' Turn with 42"" Rails",Product,1543.31,578.74,false,,"","","",true,true
+ES45E4PR,"Entrada Commercial Modular Platform 4' x 5' 4' side Entry with 42"" Guard Rails",Product,1535.41,575.78,false,,"","","",true,true
+ES45E5PR,"Entrada Commercial Modular Platform 4' x 5' 5' side Entry with 42"" Guard Rails",Product,1507.84,565.44,false,,"","","",true,true
+ES55PR,"Entrada Commercial Modular Platform 5' x 5' with 42"" Guard Rails",Product,1770.47,663.93,false,,"","","",true,true
+ES56TPR,"Entrada Commercial Modular Platform 6' x 5' 5' Turn with 42"" Guard Rails",Product,1919.42,719.78,false,,"","","",true,true
+ES56E5PR,"Entrada Commercial Modular Platform 6' x 5' 5' side Entry with 42"" Guard Rails",Product,1949.84,731.19,false,,"","","",true,true
+ES56E6PR,"Entrada Commercial Modular Platform 6' x 5' 6' side Entry with 42"" Guard Rails",Product,1961.55,735.58,false,,"","","",true,true
+ES66PR,"Entrada Commercial Modular Platform 6' x6' with 42"" Guard Rails",Product,2027.38,760.27,false,,"","","",true,true
+BPCOM,"Bridge Plate 3"" x 45.25""",Product,62.91,23.59,false,,"","","",true,true
+ESCORPR,"Entrada Platform Corner Kit Picket Railing 42"" Tall",Product,75.74,28.4,false,,"","","",true,true
+ESLOOP,Entrada Handrail Loop,Product,48.78,18.29,false,,"","","",true,true
+GRBRK,Grab Rail bracket,Product,30.81,11.55,false,,"","","",true,true
+GRBTF,Grab Rail by the Foot,Product,5.13,1.92,false,,"","","",true,true
+TPCOM,"Transition Plate 9.25"" x 48""",Product,88.58,33.22,false,,"","","",true,true
+ES2T48,"Entranda Commercial Step 2 Tread, 48"" wide closed risers with 42"" Guard Rail",Product,965.41,362.03,false,,"","","",true,true
+ES3T48,"Entranda Commercial Step 3 Tread, 48"" wide closed risers with 42"" Guard Rail",Product,1464.44,549.16,false,,"","","",true,true
+ES4T48,"Entranda Commercial Step 4 Tread, 48"" wide closed risers with 42"" Guard Rail",Product,1919.22,719.71,false,,"","","",true,true
+ES5T48,"Entranda Commercial Step 5 Tread, 48"" wide closed risers with 42"" Guard Rail",Product,2368.09,888.04,false,,"","","",true,true
+ES6T48,"Entranda Commercial Step 6 Tread, 48"" wide closed risers with 42"" Guard Rail",Product,2816.24,1056.09,false,,"","","",true,true
+ES7T48,"Entranda Commercial Step 7 Tread, 48"" wide closed risers with 42"" Guard Rail",Product,3274.54,1227.95,false,,"","","",true,true
+ES8T48,"Entranda Commercial Step 8 Tread, 48"" wide closed risers with 42"" Guard Rail",Product,3732.76,1399.79,false,,"","","",true,true
+ES9T48,"Entranda Commercial Step 9 Tread, 48"" wide closed risers with 42"" Guard Rail",Product,4199.36,1574.76,false,,"","","",true,true
+ESL4836,"Entrada Step Landing 48"" x 36""  includes 4 legs and kick plate for bottom step",Product,891.55,334.33,false,,"","","",true,true
+XM136WR,"XM Series 1' long x 36"" Starter Kit, 2 Loops, TP, TT36, hardware",Product,235.37,88.27,false,,"","","",true,true
+XM236WR,"XM Series 2' long x 36"" wide with handrails",Product,495.92,185.97,false,,"","","",true,true
+XM336WR,"XM Series 3' long x 36"" wide with handrails",Product,649.47,243.55,false,,"","","",true,true
+XM436WR,"XM Series 4' long x 36"" wide with handrails",Product,809.33,303.5,false,,"","","",true,true
+XM536WR,"XM Series 5' long x 36"" wide with handrails",Product,925.12,346.92,false,,"","","",true,true
+XM636WR,"XM Series 6' long x 36"" wide with handrails",Product,1018.26,381.85,false,,"","","",true,true
+XM836WR,"XM Series 8' long x 36"" wide with handrails",Product,1280.06,480.02,false,,"","","",true,true
+XM136PR,"XM Series 1' long x 36"" Starter Kit, 2 Loops, TP, TT36 picket",Product,258.03,96.76,false,,"","","",true,true
+XM236PR,"XM Series 2' long x 36"" wide with 34"" height Picket rails",Product,519.83,194.93,false,,"","","",true,true
+XM336PR,"XM Series 3' long x 36"" wide with 34"" height Picket rails",Product,701.07,262.9,false,,"","","",true,true
+XM436PR,"XM Series 4' long x 36"" wide with 34"" height Picket rails",Product,879.81,329.93,false,,"","","",true,true
+XM536PR,"XM Series 5' long x 36"" wide with 34"" height Picket rails",Product,1081.2,405.45,false,,"","","",true,true
+XM636PR,"XM Series 6' long x 36"" wide with 34"" height Picket rails",Product,1131.54,424.33,false,,"","","",true,true
+XM836PR,"XM Series 8' long x 36"" wide with 34"" height Picket rails",Product,1562.0,585.75,false,,"","","",true,true
+XM44U,XM Series 4 x 4 universal with rails and support,Product,1278.94,479.6,false,,"","","",true,true
+XM45T,XM Series 4 x 5 Turn with rails and support,Product,1356.38,508.64,false,,"","","",true,true
+XM45E4,"XM Series 4 x 5, 4' entry with rails and support",Product,1356.38,508.64,false,,"","","",true,true
+XM45E5,"XM Series 4 x 5, 5' entry with rails and support",Product,1356.38,508.64,false,,"","","",true,true
+XM55U,XM  Series 5 x 5 universal with rails and support,Product,1546.46,579.92,false,,"","","",true,true
+XM56T,XM Series 5 x 6 Turn with rails and support,Product,1674.34,627.88,false,,"","","",true,true
+XM56E5,"XM Series 5 x 6, 5' Entry with rails and support",Product,1731.84,649.44,false,,"","","",true,true
+XM56E6,"XM Series 5 x 6, 6' Entry with rails and support",Product,1709.54,641.08,false,,"","","",true,true
+XM44UPR,"XM Series 4 x 4 universal with 34"" height picket rails and sup",Product,1508.9,565.84,false,,"","","",true,true
+XM45TPR,"XM Series 4 x 5 Turn with 34"" height picket rails and support",Product,1664.96,624.36,false,,"","","",true,true
+XM45E4PR,"XM Series 4 x 5, 4' entry with 34"" height picket rails and sup",Product,1697.82,636.68,false,,"","","",true,true
+XM45E5PR,"XM Series 4 x 5, 5' entry with 34"" height picket rails and sup",Product,1633.28,612.48,false,,"","","",true,true
+XM55UPR,"XM Series 5 x 5 universal with 34"" height picket rails and sup",Product,1917.22,718.96,false,,"","","",true,true
+XM56TPR,"XM Series 5 x 6 Turn with 34"" height picket rails and support",Product,2157.76,809.16,false,,"","","",true,true
+XM56E5PR,"XM Series 5 x 6, 5' Entry with 34"" height picket rails and sup",Product,2191.78,821.92,false,,"","","",true,true
+XM56E6PR,"XM Series 5 x 6, 6' Entry with 34"" height picket rails and sup",Product,2465.18,924.44,false,,"","","",true,true
+HERO1,"Hero 1"" threshold ramp",Product,111.22,41.71,false,,"","","",true,true
+HERO2,"Hero 2"" threshold ramp",Product,158.92,59.6,false,,"","","",true,true
+HERO3,"Hero 3"" threshold ramp",Product,190.72,71.52,false,,"","","",true,true
+HERO4,"Hero 4"" threshold ramp",Product,222.52,83.45,false,,"","","",true,true
+HERO5,"Hero 5"" threshold ramp",Product,286.12,107.3,false,,"","","",true,true
+HERO6,"Hero 6"" threshold ramp",Product,333.82,125.18,false,,"","","",true,true
+RAEZ0010,"1/2"" x 3.25"" x 41.5"" Rubber Threshold Ramp",Product,64.9,24.34,false,,"","","",true,true
+RAEZ0050,"3/4"" x 6.5"" x 41.5"" Rubber Threshold Ramp",Product,75.9,28.46,false,,"","","",true,true
+RAEZ0110,"7/8"" x 8"" x 41.5"" Rubber Threshold Ramp",Product,89.98,39.99,false,,"","","",true,true
+RAEZ1110,"1 1/4"" x 14"" x 46"" Rubber Threshold Ramp",Product,139.0,52.13,false,,"","","",true,true
+RAEZ1310,"1 1/2"" x 17.75"" x 45.75"" Rubber Threshold Ramp",Product,257.0,105.99,false,,"","","",true,true
+RAEZ1510,"1 3/4"" x 22"" x 45.75"" Rubber Threshold Ramp",Product,289.0,108.38,false,,"","","",true,true
+RAEZ2100,"2"" x 23.25"" x 46"" Rubber Threshold Ramp",Product,440.98,179.99,false,,"","","",true,true
+SF2,"Sidekick folding 2' x 29""",Product,153.8,57.67,false,,"","","",true,true
+SF3,"Sidekick folding 3' x 29""",Product,200.44,75.16,false,,"","","",true,true
+SF4,"Sidekick folding 4' x 29""",Product,270.4,101.4,false,,"","","",true,true
+SF5,"Sidekick folding 5' x 29""",Product,340.36,127.63,false,,"","","",true,true
+SF6,"Sidekick folding 6' x 29""",Product,387.0,145.12,false,,"","","",true,true
+SS232,"Sidekick Solid 2' x 32""",Product,128.84,48.32,false,,"","","",true,true
+SS332,"Sidekick Solid 3' x 32""",Product,194.96,73.11,false,,"","","",true,true
+SS432,"Sidekick Solid 4' x 32""",Product,261.01,97.88,false,,"","","",true,true
+SS532,"Sidekick Solid 5' x 32""",Product,327.06,122.65,false,,"","","",true,true
+SS632,"Sidekick Solid 6' x 32""",Product,411.71,154.39,false,,"","","",true,true
+BL342WR,"Big Lug 3' x 42"" wide with 2 line handrail and support",Product,598.93,224.6,false,,"","","",true,true
+BL442WR,"Big Lug 4' x 42"" wide with 2 line handrail and support",Product,757.71,284.14,false,,"","","",true,true
+BL542WR,"Big Lug 5' x 42"" wide with 2 line handrail and support",Product,928.33,348.12,false,,"","","",true,true
+BL642WR,"Big Lug 6' x 42"" wide with 2 line handrail and support",Product,1099.54,412.33,false,,"","","",true,true
+Harmar Pinnacle Stair Lift 300lb capacity,Harmar Pinnacle Stair Lift 300lb capacity,Product,3795.0,1650.0,false,,"","","",true,true
+Harmar Pinnacle Stair Lift 300lb capacity NO track or brackets included,Harmar Pinnacle Stair Lift 300lb capacity NO track or brackets included,Product,0.0,0.0,false,,"","","",true,true
+Harmar Pinnacle SL300 Stair Lift - 300lb capacity with chassis obstruction sensors,Harmar Pinnacle Stair Lift 300lb capacity with chassis obstruction sensors,Product,3960.0,1650.0,false,,"","","",true,true
+Harmar Pinnacle Stair Lift 350lb capacity,Harmar Pinnacle Stair Lift 350lb capacity,Product,5295.0,0.0,false,,"","","",true,true
+Harmar Pinnacle Stair Lift 350lb capacity Folding Rail Left Hand unit,Harmar Pinnacle Stair Lift 350lb capacity Folding Rail Left Hand unit,Product,7295.0,0.0,false,,"","","",true,true
+Harmar Pinnacle Stair Lift 350lb capacity Folding Rail Right Hand unit,Harmar Pinnacle Stair Lift 350lb capacity Folding Rail Right Hand unit,Product,7295.0,0.0,false,,"","","",true,true
+Harmar Pinnacle Stair Lift 350lb capacity NO track or brackets included,Harmar Pinnacle Stair Lift 350lb capacity NO track or brackets included,Product,4200.0,0.0,false,,"","","",true,true
+Harmar Pinnacle Stair Lift 600lb capacity HD,Harmar Pinnacle Stair Lift 600lb capacity HD,Product,8395.0,0.0,false,,"","","",true,true
+Harmar SL300 Stair Lift Folding Rail  RH,Harmar SL300 Stair Lift Folding Rail  Right Hand,Product,6495.0,0.0,false,,"","","",true,true
+Harmar SL300 Stair Lift Folding Rail LH,Harmar SL300 Stair Lift Folding Rail Left Hand,Product,6495.0,0.0,false,,"","","",true,true
+"Harmar stair lift - 3' mid section - Pinnacle track, gear, splice bars, wiring","Harmar stair lift - 3' mid section - Pinnacle track, gear, splice bars, wiring",Product,295.0,0.0,false,,"","","",true,true
+"Harmar stair lift - 5' mid section - Pinnacle track, gear, splice bars, wiring","Harmar stair lift - 5' mid section - Pinnacle track, gear, splice bars, wiring",Product,495.0,0.0,false,,"","","",true,true
+"Harmar stair lift - 7'-9"" mid section ( 3819 )","Harmar stair lift - 7'-9"" mid section - Pinnacle track, gear, splice bars, wiring",Product,695.0,0.0,false,,"","","",true,true
+"Harmar stair lift - 7'-9"" mid section ( 3818 )","Harmar stair lift - 7'-9"" mid section - Pinnacle track, gear, splice bars, wiring",Product,695.0,0.0,false,,"","","",true,true
+"Harmar stair lift - 7'-9"" mid section","Harmar stair lift - 7'-9"" mid section - Pinnacle track, gear, splice bars, wiring",Product,695.0,0.0,false,,"","","",true,true
+"Harmar stair lift - 7'-9"" mid section - Pinnacle track, gear, splice bars, wiring","Harmar stair lift - 7'-9"" mid section - Pinnacle track, gear, splice bars, wiring",Product,600.0,0.0,false,,"","","",true,true
+"Harmar stair lift - additional standard braket, single","Harmar stair lift - additional standard bracket, single",Product,55.0,0.0,false,,"","","",true,true
+"Harmar stair lift - additional tall bracket, single","Harmar stair lift - additional tall bracket, single",Product,55.0,0.0,false,,"","","",true,true
+Harmar stair lift - Custom Cut Track,Harmar stair lift - Custom Cut Track,Product,145.0,0.0,false,,"","","",true,true
+Harmar stair lift - Extension for retractable seat belt,Harmar stair lift - Extension for retractable seat belt,Product,65.0,0.0,false,,"","","",true,true
+Harmar stair lift - Key lock on chassis,Harmar stair lift - Key lock on chassis,Product,140.0,0.0,false,,"","","",true,true
+Harmar stair lift - manual lowering tool,Harmar stair lift - manual lowering tool,Product,35.0,0.0,false,,"","","",true,true
+Harmar stair lift - Pinnacle 300 key lock on chassis,Harmar stair lift - Pinnacle 300 key lock on chassis,Product,130.0,0.0,false,,"","","",true,true
+Harmar stair lift - Pinnacle 600HD key lock on chassis,Harmar stair lift - Pinnacle 600HD key lock on chassis,Product,245.0,0.0,false,,"","","",true,true
+Harmar stair lift - retractable seatbelt for SL300 (dealer installs this),Harmar stair lift - retractable seatbelt for SL300,Product,195.0,0.0,false,,"","","",true,true
+Harmar Summit SL350 - 16'-20' custom cut track (250 lb),Harmar Summit SL350 - 16'-20' custom cut track (250 lb),Product,370.0,0.0,false,,"","","",true,true
+Harmar Summit SL350 - 20' track upgrade (250 lb),Harmar Summit SL350 - 20' track upgrade (250 lb),Product,275.0,0.0,false,,"","","",true,true
+Harmar Summit SL350 - 20'-25' custom cut track (250 lb),Harmar Summit SL350 - 20'-25' custom cut track (250 lb),Product,605.0,0.0,false,,"","","",true,true
+"Harmar Summit SL350 - 21"" extra wide seat","Harmar Summit SL350 - 21"" extra wide seat",Product,370.0,0.0,false,,"","","",true,true
+Harmar Summit SL350 - 25' track upgrade (250 lb),Harmar Summit SL350 - 25' track upgrade (250 lb),Product,605.0,0.0,false,,"","","",true,true
+Harmar Summit SL350 - flip-up arms,Harmar Summit SL350 - flip-up arms,Product,370.0,0.0,false,,"","","",true,true
+Harmar Summit SL350 - key lock on lift and call/send,Harmar Summit SL350 - key lock on lift and call/send,Product,490.0,0.0,false,,"","","",true,true
+Harmar Summit SL350 - key lock on lift only,Harmar Summit SL350 - key lock on lift only,Product,240.0,0.0,false,,"","","",true,true
+Harmar Summit SL350 - wireless call/send controls for SL350AC,Harmar Summit SL350 - wireless call/send controls for SL350AC,Product,490.0,0.0,false,,"","","",true,true
+Harmar Summit SL350 - wireless call/send controls outdoor unit,Harmar Summit SL350 - wireless call/send controls outdoor unit,Product,605.0,0.0,false,,"","","",true,true
+Harmar Summit Stair Lift up to 350lb capacity  OUTDOOR,Harmar Summit Stair Lift up to 350lb capacity OUTDOOR,Product,4695.0,0.0,false,,"","","",true,true
+Harmar-SL300 Pinnacle Stair Lift - 300 lb,Harmar-SL300 Pinnacle Stair Lift - 300 lb,Product,3895.0,0.0,false,,"","","",true,true
+Harmar Auto Lift Battery Pack,Harmar Auto Lift Battery Pack,Product,385.0,0.0,false,,"","","",true,true
+Harmar Outside Vehicle Lift 350lb capacity XL Fusion series,Harmar Outside Vehicle Lift 350lb capacity XL Fusion series - includes installation,Product,1.0,0.0,false,,"","","",true,true
+Harmar Truck Lift 350lb capacity 800 series,Harmar Truck Lift 350lb capacity 800 series,Product,4565.0,0.0,false,,"","","",true,true
+"Ponte Giulio - 12"" Satin SS Grab Bar","Ponte Giulio - 12"" Satin SS Grab Bar",Product,150.0,0.0,false,,"","","",true,true
+"Ponte Giulio - 12"" Polished SS Grab Bar","Ponte Giulio - 12"" Polished SS Grab Bar",Product,150.0,0.0,false,,"","","",true,true
+"Ponte Giulio - 18"" Satin SS Grab Bar","Ponte Giulio - 18"" Satin SS Grab Bar",Product,150.0,0.0,false,,"","","",true,true
+"Ponte Giulio - 18"" Polished SS Grab Bar","Ponte Giulio - 18"" Polished SS Grab Bar",Product,150.0,0.0,false,,"","","",true,true
+"Ponte Giulio - 24"" Satin SS Grab Bar","Ponte Giulio - 24"" Satin SS Grab Bar",Product,150.0,0.0,false,,"","","",true,true
+"Ponte Giulio - 24"" Polished SS Grab Bar","Ponte Giulio - 24"" Polished SS Grab Bar",Product,150.0,0.0,false,,"","","",true,true
+"Ponte Giulio - 32"" Satin SS Grab Bar","Ponte Giulio - 32"" Satin SS Grab Bar",Product,150.0,0.0,false,,"","","",true,true
+"Ponte Giulio - 32"" Polished SS Grab Bar","Ponte Giulio - 32"" Polished SS Grab Bar",Product,150.0,0.0,false,,"","","",true,true
+"Handicare 1000 straight stair lift 16' 5"" of track, 350 lb capacity","Handicare 1000 straight stair lift 16' 5"" of track 350 lb capacity",Product,4607.5,0.0,false,,"","","",true,true
+"Handicare 1100 Slide Track Fitting Kit, 23ft","Handicare 1100 Slide Track Fitting Kit, 23ft",Product,0.0,0.0,false,,"","","",true,true
+Harmar SL600 Stair Lift - 350lb capacity,Harmar SL600 Stair Lift - 350lb capacity,Product,5295.0,0.0,false,,"","","",true,true
+Harmar SL600 Stair Lift - 350lb capacity Folding Rail Left Hand unit,"Harmar SL600 Stair Lift - 350lb capacity, Folding Rail Left Hand unit",Product,7295.0,0.0,false,,"","","",true,true
+"Harmar SL600 Stair Lift - 350lb capacity, Folding Rail Right Hand unit","Harmar SL600 Stair Lift - 350lb capacity, Folding Rail Right Hand unit",Product,7295.0,0.0,false,,"","","",true,true
+Harmar SL600HD Stair Lift - 600lb capacity,Harmar SL600 HD Stair Lift - 600lb capacity,Product,8395.0,0.0,false,,"","","",true,true
+"Polished Stainless Steel Grab Bar - 16"" x 1.25""","16"" x 1.25"" Polished Stainless Steel Grab Bar",Product,155.0,0.0,false,,"","","",true,true
+"Polished Stainless Steel Grab Bar - 30"" x 1.25""","30"" x 1.25"" Polished Stainless Steel Grab Bar",Product,155.0,0.0,false,,"","","",true,true
+"Polished Stainless Steel Grab Bar - 36"" x 1.25""","36"" x 1.25"" Polished Stainless Steel Grab Bar",Product,155.0,0.0,false,,"","","",true,true
+"Polished Stainless Steel Grab Bar - 48""  x 1.25""","48""  x 1.25"" Polished Stainless Steel Grab Bar",Product,155.0,0.0,false,,"","","",true,true
+"Satin Stainless Steel Grab Bar - 16"" x 1.25""","16"" x 1.25"" Satin Stainless Steel Grab Bar",Product,155.0,0.0,false,,"","","",true,true
+"Satin Stainless Steel Grab Bar - 30"" x 1.25""","30"" x 1.25"" Satin Stainless Steel Grab Bar",Product,155.0,0.0,false,,"","","",true,true
+"Satin Stainless Steel Grab Bar - 36"" x 1.25""","36"" x 1.25"" Satin Stainless Steel Grab Bar",Product,155.0,0.0,false,,"","","",true,true
+"Satin Stainless Steel Grab Bar - 48"" x 1.25""","48"" x 1.25"" Satin Stainless Steel Grab Bar",Product,155.0,0.0,false,,"","","",true,true
+"Wall & Floor Mount Grab Bar, 24 1/2"" x 29"", Satin Stainless Steel","SS Wall & Floor Mount Grab Bar, 24 1/2"" x 29"", Satin",Product,103.4,0.0,false,,"","","",true,true
+NON STOCK VPL PART,NON STOCK VPL PART,Product,0.0,0.0,false,,"","","",true,true
+SHCP-CAL-001,Call Send Box with key and Rocker Switch (One),Product,222.78,0.0,false,,"","","",true,true
+SHCP-EC-200,Power Cable Cord: VPL - 8ft cord.,Product,18.0,0.0,false,,"","","",true,true
+SHCP-SH-12V-18,Gel Sealed Battery 12 Volt 18 Amp  (2 Required),Product,144.05,0.0,false,,"","","",true,true
+SHCP-SH-8G22NF,Gel Sealed Battery 12 Volt 50.6 Amp (2 Required),Product,422.12,0.0,false,,"","","",true,true
+SHCP-VPL-300,Wireless Remote for all Serenity VPLs (Includes 2 x Handsets),Product,331.07,0.0,false,,"","","",true,true
+SHCP-VPL-48028-AC,"AC Serenity Standard VPL, 36"" x 48 Platform, 49"" Tower Height, 28"" Lifting Height, 750lb Weight Capacity.",Product,8320.0,0.0,false,,"","","",true,true
+SHCP-VPL-48028-DC,"AC Serenity Standard Battery Operated VPL, 36"" x 48"" Platform, 49"" Tower Height, 28"" Lifting Height, 750lb Weight Capacity. (Batteries Not Included)",Product,8159.0,0.0,false,,"","","",true,true
+SHCP-VPL-48052-AC,"AC Serenity Standard VPL, 36"" x 48"" Platform, 81"" Tower Height, 52"" Lifting Height, 750 lb Weight Capacity.",Product,8536.0,0.0,false,,"","","",true,true
+SHCP-VPL-48052-DC,"DC Serenity Standard, Battery Operated VPL, 48"" Platform, 81"" Tower Height, 52"" Lifting Height, 750 lb Weight Capacity.(Batteries Not Included)",Product,9093.0,0.0,false,,"","","",true,true
+SHCP-VPL-48072-AC,"AC Serenity  Standard  VPL, 36"" x 48"" Platform, 102"" Tower Height, 72"" Lifting Height, 750 lb Weight Capacity",Product,9820.0,0.0,false,,"","","",true,true
+SHCP-VPL-48072-DC,"DC Serenity Standard, Battery Operated VPL, 36"" x 48"" Platform, 102"" Tower Height, 72"" Lifting Height, 750 lb Weight Capacity. (Batteries Not Included)",Product,10511.0,0.0,false,,"","","",true,true
+SHCP-VPL-LNDGATE-E,"Landing gate with electric interlock. Steel powder coated frame with polycarbonate panels. Includes Rocker switch & Key switch.(Universal Left or Right Swing) Width 36"" x Height 42""",Product,2238.95,0.0,false,,"","","",true,true
+SHCP-VPL-PLAT-GATE-E,"Platform Gate with electric interlock. Steel powder coated frame with polycarbonate panels. Includes Rocker switch & Key switch.(Universal Left or Right Swing) Width 34.5"" x Height 41"".",Product,1745.82,0.0,false,,"","","",true,true
+SHCP-VPL-PLAT-GATE-M,"Platform Gate with latch and spring loaded hinge. Stainless steel frame polycarbonate panels. (Universal Left or Right Swing) Available For VPL Heights, 28"", 52"" and 72""",Product,779.98,0.0,false,,"","","",true,true
+SHCP-VPL-RDI-G-L,Honeywell RDI Series Residential Interlock (Left) Key Entry AC/DC,Product,878.13,0.0,false,,"","","",true,true
+SHCP-VPL-RDI-G-R,Honeywell CDI Series Residential Interlock (Right) Key Entry AC/DC,Product,878.13,0.0,false,,"","","",true,true
+SHCP-VPL-SH1-105-DC,"DC Battery Operated Serenity Premium VPL, 36 x 54"" Platform, 135"" Tower Height, 105"" Lifting Height, 750 lb Weight Capacity.  (Includes Platform Gate w/ interlock) Includes Adjustable Side Mounting Bracket.  Includes Automatic Emergency Lowering system. (Batteries Not Included)",Product,18945.0,0.0,false,,"","","",true,true
+SHCP-VPL-SH1-144-DC,"DC Battery Operated Serenity Premium VPL, 36 x 54"" Platform, 13\78"" Tower Height, 144"" Lifting Height, 750 lb Weight Capacity.  (Includes Platform Gate w/ interlock) Includes Adjustable Side Mounting Bracket.  Includes Automatic Emergency Lowering system. (Batteries Not Included)",Product,0.0,0.0,false,,"","","",true,true
+SHCP-VPL-SH1-28-AC,"AC Serenity Premium VPL, 36"" x 54"" Platform, 49"" Tower Height, 28"" Lifting Height, 750 lb Weight Capacity.",Product,9038.0,0.0,false,,"","","",true,true
+SHCP-VPL-SH1-28-DC,"DC Serenity Premium VPL, Battery Operated VPL, 36"" x  54"" Platform, 49"" Tower Height, 28"" Lifting Height, 750 lb Weight Capacity.  (Batteries Not Included)",Product,9689.0,0.0,false,,"","","",true,true
+SHCP-VPL-SH1-52-AC,"AC Serenity Premium VPL, 36"" x 54"" Platform, 81"" Tower Height, 52"" Lifting Height, 750 lb Weight Capacity.",Product,10123.0,0.0,false,,"","","",true,true
+SHCP-VPL-SH1-52-DC,"DC Serenity Premium VPL, Battery Operated VPL, 36"" x  54"" Platform, 81"" Tower Height, 52"" Lifting Height, 750 lb Weight Capacity.  (Batteries Not Included)",Product,10184.0,0.0,false,,"","","",true,true
+SHCP-VPL-SH1-72-AC,"AC Serenity Premium VPL, 36"" x 54"" Platform, 102"" Tower Height, 72"" Lifting Height, 750 lb Weight Capacity",Product,8245.0,0.0,false,,"","","",true,true
+SHCP-VPL-SH1-72-DC,"DC Serenity Premium VPL, Battery Operated VPL, 36 x 54"" Platform, 102"" Tower Height, 72"" Lifting Height, 750 lb Weight Capacity.  (Batteries Not Included)",Product,9344.0,0.0,false,,"","","",true,true
+SHCP-VPL-WINPAK,"Winter Package, Includes Thermostat & Light Bulb.",Product,272.2,0.0,false,,"","","",true,true
+VPL Removal,VPL Rental Removal fee,Service,700.0,0.0,false,,"","","",true,true
+VPL Rental,Monthly rental fee for VPL,Service,450.0,0.0,false,,"","","",true,true
+Access BDD HomeGlide SSL,"AccessBDD HomeGlide stair lift - straight rail, standard beige seat w/ manual swivel.  Beige, fire-retardant upholstery, liquid repelling.  Lifetime hardware warranty",Product,3800.0,0.0,false,,"","","",true,true
+Access BDD HomeGlide SSL - folding rail,"AccessBDD HomeGlide stair lift - folding rail, standard beige seat w/ manual swivel.  Lifetime hardware warranty",Product,5000.0,0.0,false,,"","","",true,true
+Ponte Giulio - Shower Head,H51GHS35,Service,56.75,28.38,false,,"","","",true,true
+Ponte Giulio Shower Hose,H51GHS36,Service,14.47,28.94,false,,"","","",true,true
+Y87JOS04C1 - Chrome,Ponte Giulio Ergonomic Hand Shower Holder - Chrome,Product,104.04,52.02,false,,"","","",true,true
+Ponte Giulio - 12in Vinyl Grab Bar,G25JAS01.W1 - 12 Inch White Vinyl Straight Bar,Product,199.0,25.9,false,,"","","",true,true
+"Ponte Giulio - 18"" Vinyl Grab Bar","G25JAS03.W1 - 18"" White Vinyl Grab Bar",Product,179.0,29.2,false,,"","","",true,true
+"Ponte Giulio - 12"" Vinyl Grab Bar","G25JAS01.W1 - 12"" White Vinyl Grab Bar",Product,0.0,0.0,false,,"","","",true,true
+"Ponte Giulio - 32"" Vinyl Grab Bar","G25JAS06.W1 - 32"" White Vinyl Grab Bar",Product,199.0,36.65,false,,"","","",true,true
+Service Call,,Service,75.0,75.0,false,,"","","",true,true
+Bruno-CRE Straight Intermediate Landing,"CRE-2110 Elite Curve (Standard Indoor)
+Straight Intermediate Landin",Product,9325.5,0.0,false,,"","","",true,true
+Bruno-Elan SRE 3050,SRE-3050 - Elan Straight Rail Stairlift,Product,4280.0,0.0,false,,"","","",true,true
+Bruno-VPL-3153B,Residential VPL Battery-Powered Maximum Floor to Floor 53 in (1346 mm) includes 17AH Battery Pkg.,Product,8530.0,0.0,false,,"","","",true,true
+Bruno-VPL-90 Degree Platform,VPL 90°/Adjacent Platform,Product,590.0,0.0,false,,"","","",true,true
+Bruno-VPL-36x54 Platform,"VPL 36"" x 54"" (914 mm x 1372 mm) Platform",Product,630.0,0.0,false,,"","","",true,true
+Bruno-VPL-Platform Control Rocker,VPL Rocker Control With Emergency Stop And Audio/Visual Alarm,Product,310.0,0.0,false,,"","","",true,true
+Bruno-VPL-Upper Landing Gate 42,PL 42 in (1067 mm) wide inside opening Top Landing Gate With Rocker Control and Electrical/Mechanical Interlock - standard 36 in (914 mm) high universal design or 42 in (1067mm) high LH or RH specific,Product,1625.0,0.0,false,,"","","",true,true
+Services,,Service,0.0,0.0,false,,"","","",true,true
+Hours,,Service,0.0,0.0,false,,"","","",true,true
+Ramp Installation,"",Service,395.0,0.0,false,,"","","",true,true
+Demolition and disposal Fee,Job dependent labor and disposal fee,Service,750.0,0.0,false,,"","","",true,true
+Rubber 4x6 landing mat,Rubber mat to transition from ramp to driveway,Product,75.0,0.0,false,,"","","",true,true
+"Ramp Rental installation, removal and first month rent","Ramp rental is on a month-to-month basis after the minimum rental period is complete.  Customer will allow Next Day Access to charge the monthly payment to a credit card or Debit/ ACH on file.  The  Payment is due each month starting on the date of installation.  If payment is not successful, customer is fully responsible for producing an alternative payment option.  If payment is not complete within a 7 day period from the due date, the ramp will be removed from the customer’s property.  By signing below, I agree to the terms of this agreement, and I allow Next Day Access access to my property for installation and removal of the ramp according to the terms listed above. 
+No Proration: There shall be no proration of rental payments for partial months.
+Notice Requirement: The Client must provide written notice to terminate the rental agreement at least 7 days prior to the next due date.",Service,936.0,0.0,false,,"","","",true,true
+Ramp rental fee per month,"",Service,390.0,0.0,false,,"","","",true,true
+Paver 12x12,Used for installations over yard or gardens.,Product,4.19,1.86,false,,"","","",true,true
+Bruno-Elite Curved Stair Lift,Custom ordered for each staircase- extended lead time.,Product,17570.31,12550.22,false,,"","","",true,true
+Custom installation Labor,Priced per job,Service,0.0,0.0,false,,"","","",true,true
+VPL installation,Includes leveling of concrete pad,Service,750.0,0.0,false,,"","","",true,true
+Stairlift labor,Install straight stairlift,Service,550.0,0.0,false,,"","","",true,true
+Mackworth Ceiling LIft,"Includes Track, Motor, and patient sling",Product,5125.4,2092.0,false,,"","","",true,true
+Stairlift Rental,"Harmar Pinnacle SL300 with 300 pound capacity. Rental fee includes installation, and first months rent. Minimum 4 month rental",Product,999.0,0.0,false,,"","","",true,true
+Grab bar installation 1,Installation of grab bar ,Service,0.0,0.0,false,,"","","",true,true
+Grab bar installation 2,Installation of grab bar,Service,0.0,0.0,false,,"","","",true,true
+Stairlift installation,Installation of stairlift ,Service,250.0,0.0,false,,"","","",true,true
+Custom construction,"Remove existing handrail, build 5x5 wood platform with new steps to side. Prepped for Vertical Platform lift",Service,950.0,0.0,false,,"","","",true,true
+LRT,Lift-Rotate- Transfer with motor and sling. Mounts to floor and ceiling with 300 lb capacity. 5’ swing arm. Package and model #LRT-5 PKG CCP-440,Product,8325.0,3700.0,false,,"","","",true,true
+Aqua Creek Ranger 2 Pool Lift,"350# capacity, bolted to concrete pool deck. Battery operated. Price includes 2 trips to install as the mounting plate will be bolted/epoxied to pool concrete deck.",Product,7812.0,3472.0,false,,"","","",true,true
+Harmar VPL,Harmar Highlander II VPL with lift height up to 149” Options to be added separately,Product,20989.5,9995.0,false,,"","","",true,true
+Ramp purchase,"",Product,0.0,0.0,false,,"","","",true,true
+Stander Verticle Grab bar,Floor to ceiling friction fit grab bar,Product,299.0,0.0,false,,"","","",true,true
+"Threshold rubber ramp 3.5""","",Product,480.0,240.0,false,,"","","",true,true
+Credit Card Fee,Please be advised that a fee of 3% will be applied to the total cost of the job when payment is made by credit card. This fee is implemented to offset the 3% transaction cost incurred for accepting credit card payments.,Service,0.0,0.0,false,,"","","",false,true
+"Harmar Rubber Threshold- up to 4""","",Product,595.2,248.0,false,,"","","",true,true
+Harmar Power Swivel and footrest For SL600,"",Product,1495.0,725.0,false,,"","","",true,true
+Shipping,"",Service,0.0,0.0,false,,"","","",true,true
+Ramp installation Large,"",Service,495.0,0.0,false,,"","","",true,true
+Permitting fees,"",Service,0.0,0.0,false,,"","","",true,true
+Harmar Installation parts,"",Product,0.0,0.0,false,,"","","",true,true
+Fawsite S2000 Portable Shower,Portable shower with pump,Product,0.0,0.0,false,,"","","",true,true
