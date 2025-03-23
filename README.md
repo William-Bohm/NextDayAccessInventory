@@ -1,4 +1,7 @@
+# To build
+python setup.py build
+
 # To run
-./dist/mainCron --all --csv-path ./test_inventory.csv
+cd build/exe.macosx-15.0-arm64-3.13 && ./mainCron
 
 

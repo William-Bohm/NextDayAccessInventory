@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 from time import sleep
 import logging
 from datetime import datetime
+import sys
 
 # Configure logging
 logging.basicConfig(
@@ -45,6 +46,15 @@ def get_google_sheets_client():
     # Get the absolute path to the credentials file
     current_dir = os.path.dirname(os.path.abspath(__file__))
     creds_path = os.path.join(current_dir, 'nextdayaccess-452516-a51a5b7a02b8.json')
+    
+    # If the file doesn't exist (e.g., in a frozen executable), try the application root
+    if not os.path.exists(creds_path):
+        # For frozen executables
+        if getattr(sys, 'frozen', False):
+            # If we're running as a bundled executable
+            base_dir = os.path.dirname(sys.executable)
+            creds_path = os.path.join(base_dir, 'nextdayaccess-452516-a51a5b7a02b8.json')
+            logger.info(f"Using frozen executable path for credentials: {creds_path}")
     
     logger.debug(f"Using credentials file at: {creds_path}")
     
